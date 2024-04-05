@@ -1134,7 +1134,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #000000, #093602);
   color: white;
   padding: 100px 20px;
   /* Increased padding */
@@ -1145,7 +1144,26 @@ p {
   /* Adjusted curve */
   border-bottom-right-radius: 50% 60%;
   margin-top: 10px;
+  flex-direction: column;
   /* Adjusted curve */
+  /* background: linear-gradient(to bottom, #000000, #093602); */
+  background-image: url(..//images/Questions-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: unset;
+  z-index: 9;
+}
+.mmm::after {
+  content: "";
+  position: absolute;
+  border-radius: 677px;
+  background: rgba(112, 244, 93, 0.4);
+  filter: blur(200px);
+  height: 50%;
+  width: 60%;
+  left: 20%;
+  bottom: 0px;
+  z-index: -9;
 }
 
 .foort-container {
