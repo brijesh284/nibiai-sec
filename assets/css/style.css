@@ -4,7 +4,9 @@
       format("woff2"),
     url("../font/cal-sans/fonts/webfonts/CalSans-SemiBold.woff") format("woff");
 }
-
+main {
+  margin-top: -4px;
+}
 body {
   margin: none;
   padding: none;
@@ -564,6 +566,39 @@ body {
   font-size: 12px;
 }
 
+#kas-card {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 330px -30px #253c23, 350px 320px #1c3021, 320px 10px #1c3021,
+    240px 40px #1c3021, 150px 210px #253c23, 330px 100px #1c3021,
+    310px 170px #1c3021, -30px -20px #1c3021, 70px 130px #253c23,
+    350px 240px #1c3021, 50px -10px #253c23, 30px 190px #1c3021,
+    260px 290px #253c23, 180px 330px #1c3021, 50px 300px #1c3021,
+    250px 190px #1c3021, 110px -30px #253c23, -40px 240px #1c3021,
+    170px 0px #1c3021, 60px 50px #1c3021, 0px 100px #6b8c72;
+  animation: animStar 50s linear infinite;
+}
+
+@keyframes animStar {
+  0% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  50% {
+    transform: scale(4);
+    filter: blur(2px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+.kas-card-animation {
+  position: relative;
+  z-index: 9;
+}
 .kas-card-block {
   position: relative;
   padding: 40px;
@@ -572,7 +607,17 @@ body {
   overflow: hidden;
   margin-bottom: 30px;
 }
-
+.kas-card-block::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  border-radius: 11px;
+  background: linear-gradient(180deg, rgba(56, 56, 56, 0) 0%, #141414 100%);
+  mix-blend-mode: multiply;
+  bottom: 0;
+  left: 0px;
+}
 .kas-card-block:hover {
   position: relative;
   padding: 40px;
@@ -592,6 +637,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
 }
 
 .kas-card-block-content h2,
@@ -615,7 +661,26 @@ p {
 .kas-centered-section h3 {
   z-index: 1;
 }
+.kas-centered-section h3 .solutions-dec {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 4s infinite;
+}
 
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
 .kas-centered-section {
   text-align: center;
   padding: 65px 0;
@@ -732,7 +797,7 @@ p {
 }
 
 .section4-card-content {
-  padding-top: 20px;
+  padding-top: 60px;
 }
 
 .section4-card-content h5 {
@@ -1015,14 +1080,14 @@ p {
 }
 .section-7-image {
   min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .section-image {
   position: relative;
   top: 45px;
-  left: 133px;
-  /* height: 35%; */
   width: 23%;
-  /* border: 1px rgb(53, 139, 4) solid; */
   border-radius: 10px;
   box-shadow: 0px 2px 20px #101210;
 }
@@ -1153,11 +1218,12 @@ p {
   background-size: unset;
   z-index: 9;
 }
+
 .mmm::after {
   content: "";
   position: absolute;
   border-radius: 677px;
-  background: rgba(112, 244, 93, 0.4);
+  background: linear-gradient(to bottom, #000000, #70f45d66);
   filter: blur(200px);
   height: 50%;
   width: 60%;
