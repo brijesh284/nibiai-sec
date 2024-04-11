@@ -580,7 +580,7 @@ body {
     170px 0px #1c3021, 60px 50px #1c3021, 0px 100px #6b8c72;
   animation: animStar 50s linear infinite;
 }
- 
+
 @keyframes animStar {
   0% {
     transform: scale(1);
@@ -1066,6 +1066,8 @@ p {
   border-radius: 20px 20px 0px 0px;
   z-index: 99;
   border-bottom: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
 }
 .qr-card::after {
   content: "";
@@ -1083,6 +1085,58 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.icon-image-wrap {
+  position: relative;
+}
+.icon-image-wrap .icon-svg {
+  position: absolute;
+  z-index: 9998;
+}
+.icon-image-wrap .sec-1 {
+  width: 119px;
+  height: 119px;
+  top: 27px;
+  left: 27px;
+}
+.icon-image-wrap .sec-2 {
+  width: 100px;
+  height: 100px;
+  top: 34px;
+  left: 37px;
+}
+.icon-image-wrap .sec-3 {
+  width: 102px;
+  height: 100px;
+  top: 30px;
+  left: 34px;
+}
+.icon-image-wrap .sec-4 {
+  width: 120px;
+  height: 172px;
+  top: 26px;
+  left: 0px;
+}
+.icon-image-wrap .sec-5 {
+  width: 182px;
+  height: 182px;
+  top: 45px;
+  left: 2px;
+}
+.icon-image-wrap .sec-6 {
+  width: 117px;
+  height: 117px;
+  top: 32px;
+  left: 27px;
+}
+.icon-image-wrap #lottie {
+  opacity: 0;
+}
+.qr-card:hover .icon-image-wrap #lottie {
+  opacity: 1;
+}
+.qr-card:hover .icon-image-wrap .icon-svg {
+  opacity: 0;
 }
 .section-image {
   position: relative;
