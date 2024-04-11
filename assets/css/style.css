@@ -13,6 +13,7 @@ body {
   font-family: "cal-sans", sans-serif;
   align-items: center;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 @media (max-width: 767px) {
   .header .container {
@@ -149,7 +150,7 @@ body {
   box-shadow: 0 0 5px #4c4d4c;
 }
 .try-now-btn:hover {
-  background: #14e01469;
+  background: #155c15;
   color: #fff;
 }
 .try-now-btn-one {
@@ -174,12 +175,10 @@ body {
 }
 
 .try-now-btn-one:hover {
-  background: #14e014;
+  background: #155c15;
   color: #fff;
-  padding: 14px 33px;
-  border-radius: 35px;
-  box-shadow: 0 0 5px #13b42e, 0 0 25px #075e16, 0 0 50px #06d829,
-    0 0 100px #06d829;
+  box-shadow: 0 0 5px #13b42e57, 0 0 25px #075e165e, 0 0 50px #06d82952,
+    0 0 100px #155c15;
   border: 1px solid #14e014;
 }
 
@@ -195,8 +194,6 @@ body {
 .try-now-btn-two:hover {
   background: #000000;
   color: #ffffff;
-  box-shadow: 0 0 5px #4c4d4c, 0 0 25px #707270, 0 0 50px #aaaaaa,
-    0 0 100px #dadada;
 }
 
 .shop {
@@ -450,13 +447,13 @@ body {
 }
 @keyframes round-1 {
   0% {
-    transform: scale(1);
+    transform: rotate(0deg);
   }
   50% {
-    transform: scale(0.5);
+    transform: rotate(360deg);
   }
   100% {
-    transform: scale(1);
+    transform: rotate(0deg);
   }
 }
 .card-images-profile .nibiman-round-2 {
@@ -538,7 +535,6 @@ body {
 }
 
 .kas-section-bg {
-  background-color: #101010;
   padding: 90px 0;
   color: #fff;
 }
@@ -684,7 +680,7 @@ p {
 .kas-centered-section {
   text-align: center;
   padding: 65px 0;
-  background-color: #101010;
+  /* background-color: #101010; */
   color: #fff;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -696,7 +692,6 @@ p {
 /* ***************************************************** */
 
 .serviceofferedsection {
-  background-color: #101010;
   padding-bottom: 10px;
 }
 
@@ -729,11 +724,10 @@ p {
   z-index: 9;
 }
 .featurebtn:hover {
-  background: #14e014;
+  background: #155c15;
   color: #fff;
-  box-shadow: 0 0 5px #13b42e, 0 0 25px #075e16, 0 0 50px #06d829,
-    0 0 100px #06d829;
-  border: none;
+  box-shadow: 0 0 5px #13b42e, 0 0 25px #075e165e, 0 0 50px #06d82952,
+    0 0 100px #155c15;
 }
 .serviceofferedsection h1 {
   font-weight: bold;
@@ -869,7 +863,6 @@ p {
 }
 
 .section-4 {
-  background-color: #101010;
   padding-bottom: 120px;
   padding-top: 30px;
 }
@@ -963,9 +956,6 @@ p {
 }
 
 /* section 6 */
-.section-6 {
-  background-color: #000000;
-}
 .ai-power-section {
   position: relative;
 }
@@ -1014,11 +1004,10 @@ p {
   border: none;
 }
 .ai-btn:hover {
-  background: #14e014;
+  background: #155c15;
   color: #fff;
-  box-shadow: 0 0 5px #13b42e, 0 0 25px #075e16, 0 0 50px #06d829,
-    0 0 100px #06d829;
-  border: none;
+  box-shadow: 0 0 5px #13b42e, 0 0 25px #075e165e, 0 0 50px #06d82952,
+    0 0 100px #155c15;
 }
 .sec-6-heading {
   color: #70f45d;
@@ -1031,7 +1020,6 @@ p {
 }
 
 .section-7 {
-  background-color: #000;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -1290,8 +1278,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #000000, #000000);
-  padding: 210px;
+  /* background: linear-gradient(to bottom, #000000, #000000); */
+  padding: 210px 210px 210px 210px;
 }
 
 .foort-logo {
