@@ -532,7 +532,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-4">
-              <div class="card qr-card">
+              <div class="card qr-card lottie-container">
                 <div class="section-7-image">
                   <div class="icon-image-wrap">
                     <lottie-player
@@ -559,7 +559,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card qr-card">
+              <div class="card qr-card lottie-container">
                 <div class="section-7-image">
                   <div class="icon-image-wrap">
                     <lottie-player
@@ -589,7 +589,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card qr-card">
+              <div class="card qr-card lottie-container">
                 <div class="section-7-image">
                   <div class="icon-image-wrap">
                     <lottie-player
@@ -618,7 +618,7 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-md-4">
-              <div class="card qr-card">
+              <div class="card qr-card lottie-container">
                 <div class="section-7-image">
                   <div class="icon-image-wrap">
                     <lottie-player
@@ -646,7 +646,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card qr-card">
+              <div class="card qr-card lottie-container">
                 <div class="section-7-image">
                   <div class="icon-image-wrap">
                     <lottie-player
@@ -675,7 +675,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card qr-card">
+              <div class="card qr-card lottie-container">
                 <div class="section-7-image">
                   <div class="icon-image-wrap">
                     <lottie-player
@@ -1339,6 +1339,26 @@
           }
         );
       });
+
+    $(document).ready(function() {
+      $(".lottie-container").each(function(index) {
+        const $lottieContainer = $(this);
+        const $lottiePlayer = $lottieContainer.find("lottie-player");
+
+        // Pause the animation initially
+        $lottiePlayer.get(0).pause();
+
+        // When mouse enters the container, play the animation
+        $lottieContainer.on("mouseenter", function() {
+          $lottiePlayer.get(0).play();
+        });
+
+        // When mouse leaves the container, pause the animation
+        $lottieContainer.on("mouseleave", function() {
+          $lottiePlayer.get(0).pause();
+        });
+      });
+    });       
     </script>
   </body>
 </html>
