@@ -470,7 +470,7 @@ body {
   width: 100px;
   bottom: 10%;
   right: 0%;
-  animation-name: round-3;
+  animation-name: round-1;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
