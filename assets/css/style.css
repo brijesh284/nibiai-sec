@@ -450,10 +450,10 @@ body {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 .card-images-profile .nibiman-round-2 {
@@ -520,7 +520,25 @@ body {
   height: 7%;
   width: 4%;
 } */
-
+/* award-section */
+.award-section {
+  text-align: center;
+  padding: 90px 0 65px;
+  /* background-color: #101010; */
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.award-section h1 {
+  font-weight: bold;
+  font-size: 55px;
+  color: #70f45d;
+  text-align: center;
+  margin-bottom: 30px;
+}
 /* section three */
 
 /* hover effect */
@@ -746,7 +764,6 @@ p {
 
 .section4-card {
   /* background-color: #418e36, 15%; */
-
   /* background: linear-gradient(174deg, #0b260e 5%, rgb(0 0 0 / 31%) 100%); */
   background: linear-gradient(rgb(112 244 93 / 50%) 0%, rgb(2, 2, 2) 57%);
   position: relative;
@@ -762,6 +779,9 @@ p {
   border-radius: 20px;
   height: 242px;
   transition: transform 0.5s ease;
+}
+.section4-card img {
+  width: 50px;
 }
 .section4-card::after {
   content: "";
