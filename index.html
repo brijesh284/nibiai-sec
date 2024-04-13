@@ -52,6 +52,16 @@
       .balls b {
         border-radius: 50%;
       }
+      body{
+        overflow: hidden;
+        max-height: 100vh;
+      }
+      .foort-container {
+        padding: 210px 210px 60px 210px;
+      }
+      ::-webkit-scrollbar {
+          display: none;
+      }
     </style>
   </head>
   <style>
@@ -164,7 +174,7 @@
                     wizard, leading the
                     <a
                       href="https://nyxwolves.com/"
-                      style="color: #2315c7; font-weight: 700"
+                      style="color: #7971d1; font-weight: 700"
                       >Nyx Wolves</a
                     >
                     – a pack of elite AI specialists driven by innovation and
@@ -177,7 +187,7 @@
                     in AI but our commitment to understanding your unique needs
                     and delivering tailor-made, impactful solutions.
                   </p>
-                  <div class="col-md-3 d-flex flex-column">
+                  <div class="col-md-4 d-flex flex-column">
                     <button class="try-now-btn-two">Meet Nibi Now ></button>
                   </div>
                 </div>
@@ -195,22 +205,19 @@
         </div>
         <ul class="award-slider">
           <li>
-            <img src="assets/icons/icon-1.svg" alt="SAMPLE" />
+            <img src="assets/images/img1.jpg" alt="SAMPLE" />
           </li>
           <li>
-            <img src="assets/icons/icon-1.svg" alt="SAMPLE" />
+            <img src="assets/images/img2.jpg" alt="SAMPLE" />
           </li>
           <li>
-            <img src="assets/icons/icon-1.svg" alt="SAMPLE" />
+            <img src="assets/images/img3.jpg" alt="SAMPLE" />
           </li>
           <li>
-            <img src="assets/icons/icon-1.svg" alt="SAMPLE" />
+            <img src="assets/images/img4.jpg" alt="SAMPLE" />
           </li>
           <li>
-            <img src="assets/icons/icon-1.svg" alt="SAMPLE" />
-          </li>
-          <li>
-            <img src="assets/icons/icon-1.svg" alt="SAMPLE" />
+            <img src="assets/images/img5.jpg" alt="SAMPLE" />
           </li>
         </ul>
       </section>
@@ -274,11 +281,14 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <img
+              <!-- <img
                 src="./assets/images/nibibg.png "
                 class="img-fluid nibiimage"
                 alt="Placeholder"
-              />
+              /> -->
+              <h1 class="nibi_heading">
+                <br>
+              </h1>
               <h3>
                 Explore the diverse applications of
                 <span style="color: #70f45d">Personalized AI</span> <br />across
@@ -541,7 +551,7 @@
                       speed="1"
                       style="width: 172px; height: 172px"
                       loop
-                      
+                      autoplay
                     ></lottie-player>
                   </div>
                 </div>
@@ -569,7 +579,7 @@
                       speed="1"
                       style="width: 172px; height: 172px"
                       loop
-                      
+                      autoplay
                     ></lottie-player>
                   </div>
                 </div>
@@ -599,7 +609,7 @@
                       speed="1"
                       style="width: 172px; height: 172px"
                       loop
-                      
+                      autoplay
                     ></lottie-player>
                   </div>
                 </div>
@@ -628,7 +638,7 @@
                       speed="1"
                       style="width: 120px; height: 172px"
                       loop
-                      
+                      autoplay
                     ></lottie-player>
                   </div>
                 </div>
@@ -656,7 +666,7 @@
                       speed="1"
                       style="width: 172px; height: 172px"
                       loop
-                      
+                      autoplay
                     ></lottie-player>
                   </div>
                 </div>
@@ -685,7 +695,7 @@
                       speed="1"
                       style="width: 172px; height: 172px"
                       loop
-                      
+                      autoplay
                     ></lottie-player>
                   </div>
                 </div>
@@ -1192,7 +1202,7 @@
       </section>
     </main>
     <!-- json icon -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js"></script> -->
     <!--END json icon -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
@@ -1200,16 +1210,33 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <!-- smooth scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js" integrity="sha512-3f8C6NAQZv0YfwHFnjF231IIVcfZPnzL8EcHhNlzcoSRoEvC/iKDbtC+oYvL+0fRmEUMUYSvrZSE08TcRZYpgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-      "use strict";
-      const Locoscroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        tablet: { smooth: true },
-        smartphone: {
-          smooth: true,
-        },
-      });
+
+      var Scrollbar = window.Scrollbar;
+
+      var options = {
+        // Specify options here
+        damping: 0.02, // Adjust damping for the smoothness of scrolling
+        thumbMinSize: 20, // Set the minimum size of the scrollbar thumb
+        // Add more options as needed
+      };
+
+      // Make sure the element exists and the options object is properly defined
+      var scrollbarElement = document.querySelector('body');
+      if (scrollbarElement) {
+        Scrollbar.init(scrollbarElement, options);
+      } else {
+        console.error("Scrollbar element not found.");
+      }      // "use strict";
+      // const Locoscroll = new LocomotiveScroll({
+      //   el: document.querySelector("[data-scroll-container]"),
+      //   smooth: true,
+      //   tablet: { smooth: true },
+      //   smartphone: {
+      //     smooth: true,
+      //   },
+      // });
     </script>
     <!-- award-slider -->
     <script
@@ -1340,25 +1367,53 @@
         );
       });
 
-    $(document).ready(function() {
-      $(".lottie-container").each(function(index) {
-        const $lottieContainer = $(this);
-        const $lottiePlayer = $lottieContainer.find("lottie-player");
-
-        // Pause the animation initially
-        $lottiePlayer.get(0).pause();
-
-        // When mouse enters the container, play the animation
-        $lottieContainer.on("mouseenter", function() {
-          $lottiePlayer.get(0).play();
-        });
-
-        // When mouse leaves the container, pause the animation
-        $lottieContainer.on("mouseleave", function() {
-          $lottiePlayer.get(0).pause();
-        });
-      });
-    });      
+      
     </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  $(document).ready(function() {
+
+
+  });
+  $(window).on('load', function() {
+    setTimeout(function() {
+      $.getScript("https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js",function() {
+          setTimeout(function(argument) {
+            $(".lottie-container").each(function(index) {
+              const $lottieContainer = $(this);
+              const $lottiePlayer = $lottieContainer.find("lottie-player");
+
+              // Pause the animation initially
+              $lottiePlayer.get(0).pause();
+
+              // When mouse enters the container, play the animation
+              $lottieContainer.on("mouseenter", function() {
+                $lottiePlayer.get(0).play();
+              });
+
+              // When mouse leaves the container, pause the animation
+              $lottieContainer.on("mouseleave", function() {
+                $lottiePlayer.get(0).pause();
+              });
+            });
+          },100);
+        });
+    },100);
+  })
+  window.scrollTo(0, 0);
+  $(document).ready(function() {
+  var typed5 = new Typed('.nibi_heading', {
+    strings: ['Unlock the Future of Innovation.','Elevate Your Business with AI.'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    // backDelay: 500,
+    startDelay: 0,
+    cursorChar: '',
+    loop: true
+  });
+    
+
+  });
+</script>    
   </body>
 </html>
