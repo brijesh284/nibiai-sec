@@ -1371,35 +1371,31 @@
     </script>
 <script>
   $(document).ready(function() {
-    // Function to dynamically load the Lottie Player script after 5 seconds
-    function loadLottiePlayer() {
-      var script = document.createElement('script');
-      script.src = "https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js";
-      document.head.appendChild(script);
-      setTimeout(function(argument) {
-        $(".lottie-container").each(function(index) {
-          const $lottieContainer = $(this);
-          const $lottiePlayer = $lottieContainer.find("lottie-player");
 
-          // Pause the animation initially
-          $lottiePlayer.get(0).pause();
+    setTimeout(function() {
+      $.getScript("https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js",function() {
+          setTimeout(function(argument) {
+            $(".lottie-container").each(function(index) {
+              const $lottieContainer = $(this);
+              const $lottiePlayer = $lottieContainer.find("lottie-player");
 
-          // When mouse enters the container, play the animation
-          $lottieContainer.on("mouseenter", function() {
-            $lottiePlayer.get(0).play();
-          });
+              // Pause the animation initially
+              $lottiePlayer.get(0).pause();
 
-          // When mouse leaves the container, pause the animation
-          $lottieContainer.on("mouseleave", function() {
-            $lottiePlayer.get(0).pause();
-          });
-        });    
-      },1000);
-    }
+              // When mouse enters the container, play the animation
+              $lottieContainer.on("mouseenter", function() {
+                $lottiePlayer.get(0).play();
+              });
 
-    // Delay loading of the Lottie Player script by 5 seconds
-    setTimeout(loadLottiePlayer, 100); // 5000 milliseconds = 5 seconds
-  });   
+              // When mouse leaves the container, pause the animation
+              $lottieContainer.on("mouseleave", function() {
+                $lottiePlayer.get(0).pause();
+              });
+            });
+          },1000);
+        });
+    },100);
+  });
 </script>    
   </body>
 </html>
