@@ -1372,12 +1372,11 @@
 <script>
   $(document).ready(function() {
 
+
+  });
+  $(window).on('load', function() {
     setTimeout(function() {
       $.getScript("https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js",function() {
-          $("lottie-player").each(function(index) {
-            // Pause the current <lottie-player> element
-            $(this).get(0).pause();
-          });
           setTimeout(function(argument) {
             $(".lottie-container").each(function(index) {
               const $lottieContainer = $(this);
@@ -1396,10 +1395,10 @@
                 $lottiePlayer.get(0).pause();
               });
             });
-          },1000);
+          },100);
         });
     },100);
-  });
+  })
 </script>    
   </body>
 </html>
