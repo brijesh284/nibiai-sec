@@ -55,9 +55,6 @@
       body{
         overflow: hidden;
         max-height: 100vh;
-      }      
-      .has-scroll-smooth [data-scroll-container]{
-        overflow: auto;
       }
       .foort-container {
         padding: 210px 210px 60px 210px;
@@ -1205,7 +1202,7 @@
       </section>
     </main>
     <!-- json icon -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js"></script> -->
     <!--END json icon -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
@@ -1213,16 +1210,33 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <!-- smooth scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js" integrity="sha512-3f8C6NAQZv0YfwHFnjF231IIVcfZPnzL8EcHhNlzcoSRoEvC/iKDbtC+oYvL+0fRmEUMUYSvrZSE08TcRZYpgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-      "use strict";
-      const Locoscroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        tablet: { smooth: true },
-        smartphone: {
-          smooth: true,
-        },
-      });
+
+      var Scrollbar = window.Scrollbar;
+
+      var options = {
+        // Specify options here
+        damping: 0.05, // Adjust damping for the smoothness of scrolling
+        thumbMinSize: 20, // Set the minimum size of the scrollbar thumb
+        // Add more options as needed
+      };
+
+      // Make sure the element exists and the options object is properly defined
+      var scrollbarElement = document.querySelector('body');
+      if (scrollbarElement) {
+        Scrollbar.init(scrollbarElement, options);
+      } else {
+        console.error("Scrollbar element not found.");
+      }      // "use strict";
+      // const Locoscroll = new LocomotiveScroll({
+      //   el: document.querySelector("[data-scroll-container]"),
+      //   smooth: true,
+      //   tablet: { smooth: true },
+      //   smartphone: {
+      //     smooth: true,
+      //   },
+      // });
     </script>
     <!-- award-slider -->
     <script
@@ -1353,25 +1367,39 @@
         );
       });
 
-    $(document).ready(function() {
-      $(".lottie-container").each(function(index) {
-        const $lottieContainer = $(this);
-        const $lottiePlayer = $lottieContainer.find("lottie-player");
-
-        // Pause the animation initially
-        $lottiePlayer.get(0).pause();
-
-        // When mouse enters the container, play the animation
-        $lottieContainer.on("mouseenter", function() {
-          $lottiePlayer.get(0).play();
-        });
-
-        // When mouse leaves the container, pause the animation
-        $lottieContainer.on("mouseleave", function() {
-          $lottiePlayer.get(0).pause();
-        });
-      });
-    });       
+      
     </script>
+<script>
+  $(document).ready(function() {
+    // Function to dynamically load the Lottie Player script after 5 seconds
+    function loadLottiePlayer() {
+      var script = document.createElement('script');
+      script.src = "https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js";
+      document.head.appendChild(script);
+      setTimeout(function(argument) {
+        $(".lottie-container").each(function(index) {
+          const $lottieContainer = $(this);
+          const $lottiePlayer = $lottieContainer.find("lottie-player");
+
+          // Pause the animation initially
+          $lottiePlayer.get(0).pause();
+
+          // When mouse enters the container, play the animation
+          $lottieContainer.on("mouseenter", function() {
+            $lottiePlayer.get(0).play();
+          });
+
+          // When mouse leaves the container, pause the animation
+          $lottieContainer.on("mouseleave", function() {
+            $lottiePlayer.get(0).pause();
+          });
+        });    
+      },1000);
+    }
+
+    // Delay loading of the Lottie Player script by 5 seconds
+    setTimeout(loadLottiePlayer, 100); // 5000 milliseconds = 5 seconds
+  });   
+</script>    
   </body>
 </html>
