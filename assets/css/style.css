@@ -9,7 +9,7 @@
     width: 200px;
     top: 13%;
     left: 100%;
-    animation: round1 30s infinite linear;
+    animation: round1 40s infinite linear;
 }
 @keyframes round1 {
   0%   {top: 13%; left: 0%; width: 100px; z-index: 1;}
@@ -26,7 +26,7 @@
   width: 50px;
   bottom: 20%;
   left: 6%;
-  animation: round2 10s infinite linear;
+  animation: round2 20s infinite linear;
 }
 @keyframes round2 {
   0%   {bottom: 20%; left: 0%; width: 50px; z-index: 0;}
@@ -42,7 +42,7 @@
     width: 100px;
     bottom: 10%;
     right: 0%;
-    animation: round3 5s infinite linear;
+    animation: round3 10s infinite linear;
 }
 @keyframes round3 {
   0%   {bottom: 10%; right: 0%; width: 10px; z-index: 1;}
@@ -246,17 +246,31 @@ body {
 }
 
 .try-now-btn-two {
-  background: linear-gradient(92deg, #101010 -21.85%, #616161 98.51%);
-  color: #ffffff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 30px;
-  line-height: normal;
+    background: linear-gradient(92deg, #101010 -21.85%, #616161 98.51%);
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    line-height: normal;
+    background-color: #605b5b33;
+    color: #fff;
+    padding: 14px 33px;
+    border-radius: 35px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid rgb(78 76 76);
+    font-family: 'Inter';
+    font-optical-sizing: auto;
+    font-weight: 700;
 }
 
 .try-now-btn-two:hover {
-  background: #000000;
-  color: #ffffff;
+/*  background: #000000;
+  color: #ffffff;*/
+    background: #155c15;
+    color: #fff;
+    box-shadow: 0 0 5px #13b42e57, 0 0 25px #075e165e, 0 0 50px #06d82952, 0 0 100px #155c15;
+    border: 1px solid #14e014;  
 }
 
 .shop {
@@ -1141,9 +1155,9 @@ p {
   cursor: pointer;
   transition: all ease-in-out 0.5s;
 }
-.qr-card:hover {
+/*.qr-card:hover {
   box-shadow: 0 0 5px #2c5233, 0 0 5px #425e47, 0 0 5px #364e3a, 0 0 5px #23492a;
-}
+}*/
 .qr-card::after {
   content: "";
   position: absolute;
