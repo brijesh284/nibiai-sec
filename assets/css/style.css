@@ -5,20 +5,55 @@
     url("../font/cal-sans/fonts/webfonts/CalSans-SemiBold.woff") format("woff");
 }
 .card-images-profile .nibiman-round-1 {
-    position: absolute;
-    width: 200px;
-    top: 13%;
-    left: 100%;
-    animation: round1 40s infinite linear;
+  position: absolute;
+  width: 200px;
+  top: 13%;
+  left: 100%;
+  animation: round1 40s infinite linear;
 }
 @keyframes round1 {
-  0%   {top: 13%; left: 0%; width: 100px; z-index: 1;}
-  25%  {top: 31%; left: 50%; width: 50px; z-index: 1;}
-  50%  {top: 40%; left: 100%; width: 100px; z-index: 1;}
-  51%  {top: 40%; left: 100%; width: 100px; z-index: 2;}
-  75%  {top: 31%; left: 50%; width: 150px; z-index: 2;}
-  99% {top: 13%; left: 0%; width: 100px; z-index: 2;}
-  100% {top: 13%; left: 0%; width: 100px; z-index: 1;}
+  0% {
+    top: 13%;
+    left: 0%;
+    width: 100px;
+    z-index: 1;
+  }
+  25% {
+    top: 31%;
+    left: 50%;
+    width: 50px;
+    z-index: 1;
+  }
+  50% {
+    top: 40%;
+    left: 100%;
+    width: 100px;
+    z-index: 1;
+  }
+  51% {
+    top: 40%;
+    left: 100%;
+    width: 100px;
+    z-index: 2;
+  }
+  75% {
+    top: 31%;
+    left: 50%;
+    width: 150px;
+    z-index: 2;
+  }
+  99% {
+    top: 13%;
+    left: 0%;
+    width: 100px;
+    z-index: 2;
+  }
+  100% {
+    top: 13%;
+    left: 0%;
+    width: 100px;
+    z-index: 1;
+  }
 }
 
 .card-images-profile .nibiman-round-2 {
@@ -29,42 +64,102 @@
   animation: round2 20s infinite linear;
 }
 @keyframes round2 {
-  0%   {bottom: 20%; left: 0%; width: 50px; z-index: 0;}
-  25%  {bottom: 20%; left: 50%; width: 40px; z-index: 0;}
-  50%  {bottom: 20%; left: 100%; width: 50px; z-index: 0;}
-  51%  {bottom: 20%; left: 100%; width: 50px; z-index: 1;}
-  75%  {bottom: 20%; left: 50%; width: 55px; z-index: 1;}
-  100% {bottom: 20%; left: 0%; width: 50px; z-index: 1;}
+  0% {
+    bottom: 20%;
+    left: 0%;
+    width: 50px;
+    z-index: 0;
+  }
+  25% {
+    bottom: 20%;
+    left: 50%;
+    width: 40px;
+    z-index: 0;
+  }
+  50% {
+    bottom: 20%;
+    left: 100%;
+    width: 50px;
+    z-index: 0;
+  }
+  51% {
+    bottom: 20%;
+    left: 100%;
+    width: 50px;
+    z-index: 1;
+  }
+  75% {
+    bottom: 20%;
+    left: 50%;
+    width: 55px;
+    z-index: 1;
+  }
+  100% {
+    bottom: 20%;
+    left: 0%;
+    width: 50px;
+    z-index: 1;
+  }
 }
 
 .card-images-profile .nibiman-round-3 {
-    position: absolute;
-    width: 100px;
-    bottom: 10%;
-    right: 0%;
-    animation: round3 10s infinite linear;
+  position: absolute;
+  width: 100px;
+  bottom: 10%;
+  right: 0%;
+  animation: round3 10s infinite linear;
 }
 @keyframes round3 {
-  0%   {bottom: 10%; right: 0%; width: 10px; z-index: 1;}
-  25%  {bottom: 15%; right: 50%; width: 50px; z-index: 1;}
-  50%  {bottom: 20%; right: 100%; width: 25px; z-index: 1;}
-  51%  {bottom: 20%; right: 100%; width: 25px; z-index: 0;}
-  75%  {bottom: 15%; right: 50%; width: 15px; z-index: 0;}
-  100% {bottom: 10%; right: 0%; width: 10px; z-index: 0;}
+  0% {
+    bottom: 10%;
+    right: 0%;
+    width: 10px;
+    z-index: 1;
+  }
+  25% {
+    bottom: 15%;
+    right: 50%;
+    width: 50px;
+    z-index: 1;
+  }
+  50% {
+    bottom: 20%;
+    right: 100%;
+    width: 25px;
+    z-index: 1;
+  }
+  51% {
+    bottom: 20%;
+    right: 100%;
+    width: 25px;
+    z-index: 0;
+  }
+  75% {
+    bottom: 15%;
+    right: 50%;
+    width: 15px;
+    z-index: 0;
+  }
+  100% {
+    bottom: 10%;
+    right: 0%;
+    width: 10px;
+    z-index: 0;
+  }
 }
 button.try-now-btn-two {
-    letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 }
 .nibi_heading {
-    font-weight: bold;
-    font-size: 55px;
-    color: #70f45d;
-    text-align: center;
-    margin-bottom: 25px;
-    min-height: 140px;
+  font-weight: bold;
+  font-size: 55px;
+  color: #70f45d;
+  text-align: center;
+  margin-bottom: 25px;
+  min-height: 140px;
 }
 .award-slider img {
-    width: 50%;
+  width: 50%;
 }
 
 main {
@@ -111,8 +206,8 @@ body {
 }
 
 .menu {
-  width: 80%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 0px auto;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -191,7 +286,10 @@ body {
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
-
+.header nav ul li .active-menu {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #70f45d;
+}
 .header nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.15);
   color: #70f45d;
@@ -213,7 +311,7 @@ body {
   box-shadow: 0 0 5px #4c4d4c;
 }
 .try-now-btn:hover {
-  background: #155c15;
+  /* background: #155c15; */
   color: #fff;
 }
 .try-now-btn-one {
@@ -246,31 +344,32 @@ body {
 }
 
 .try-now-btn-two {
-    background: linear-gradient(92deg, #101010 -21.85%, #616161 98.51%);
-    color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 30px;
-    line-height: normal;
-    background-color: #605b5b33;
-    color: #fff;
-    padding: 14px 33px;
-    border-radius: 35px;
-    cursor: pointer;
-    border-radius: 50px;
-    border: 1px solid rgb(78 76 76);
-    font-family: 'Inter';
-    font-optical-sizing: auto;
-    font-weight: 700;
+  background: linear-gradient(92deg, #101010 -21.85%, #616161 98.51%);
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  line-height: normal;
+  background-color: #605b5b33;
+  color: #fff;
+  padding: 14px 33px;
+  border-radius: 35px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid rgb(78 76 76);
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 700;
 }
 
 .try-now-btn-two:hover {
-/*  background: #000000;
+  /*  background: #000000;
   color: #ffffff;*/
-    background: #155c15;
-    color: #fff;
-    box-shadow: 0 0 5px #13b42e57, 0 0 25px #075e165e, 0 0 50px #06d82952, 0 0 100px #155c15;
-    border: 1px solid #14e014;  
+  background: #155c15;
+  color: #fff;
+  /* box-shadow: 0 0 5px #13b42e57, 0 0 25px #075e165e, 0 0 50px #06d82952,
+    0 0 100px #155c15; */
+  /* border: 1px solid #14e014; */
 }
 
 .shop {
@@ -470,15 +569,15 @@ body {
 }
 
 .section-2 h3 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    /* font-style: italic; */
-    color: #9e9e9e;
-    text-align: left;
-    font-size: 25px;
-    line-height: 0px;
-    padding-bottom: 50px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  /* font-style: italic; */
+  color: #9e9e9e;
+  text-align: left;
+  font-size: 25px;
+  line-height: 0px;
+  padding-bottom: 50px;
 }
 
 .section-2 p {
