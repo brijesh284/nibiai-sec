@@ -972,12 +972,9 @@ p {
   z-index: -9;
 }
 .section4-card:hover {
-  /* transform: rotate(360deg); */
-  /* height: 250px; */
+  background: linear-gradient(rgb(112 244 93 / 70%) 0%, rgb(0 0 0) 57%);
   /* transform: scale(1.1); */
   z-index: 1;
-  /* color: #25e00c; */
-  box-shadow: 0 0 5px #2c5233, 0 0 5px #425e47, 0 0 5px #364e3a, 0 0 5px #23492a;
 }
 
 .section4-icon {
@@ -1017,10 +1014,13 @@ p {
 }
 
 .section4-unique-card {
-  background-image: url("../images/maskgroup.png");
+  background-image: url("../images/maskgroup.png") !important;
   height: 242px;
   position: relative;
   background-color: none;
+}
+.section4-unique-card:hover {
+  background: transparent;
 }
 .section4-unique-card::after {
   content: "";
@@ -1042,21 +1042,31 @@ p {
 }
 
 .section4-unique-card-content button {
-  background: #000;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 35px;
   cursor: pointer;
-  z-index: 1;
-  box-shadow: 0 -0.6px 1px rgba(238, 232, 232, 0.842);
+  border-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(153, 153, 153, 0.15) 125.34%
+  );
+  border: 1px solid rgb(78 76 76);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 .section4-unique-card-content button:hover {
-  background: #000000;
-  color: #ffffff;
-  box-shadow: 0 0 5px #4c4d4c, 0 0 25px #00000096, 0 0 50px #000000,
-    0 0 100px #000000;
+  background: #155c15;
+  color: #fff;
+  box-shadow: 0 0 5px #13b42e57, 0 0 25px #075e165e, 0 0 50px #06d82952,
+    0 0 100px #155c15;
+  border: 1px solid #14e014;
 }
 
 .section-4 {
