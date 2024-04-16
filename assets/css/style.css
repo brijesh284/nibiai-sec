@@ -1402,7 +1402,7 @@ p {
   color: white;
   padding: 100px 20px;
   /* Increased padding */
-  margin: -140px;
+  margin-bottom: -140px;
   overflow: hidden;
   /* Hide overflow to hide curved portion outside the header */
   border-bottom-left-radius: 50% 60%;
