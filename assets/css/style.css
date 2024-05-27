@@ -184,7 +184,7 @@ body {
     margin-top: 20px;
   }
 
-  .logo {
+  .header-main-logo {
     margin-bottom: 20px;
   }
 
@@ -210,7 +210,7 @@ body {
   margin: 0px auto;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -243,8 +243,14 @@ body {
   margin-top: 18px;
   line-height: 65px;
 }
-
-.logo img {
+.main-header-menu {
+  position: relative;
+}
+.header-main-logo {
+  position: absolute;
+  left: 0;
+}
+.header-main-logo img {
   width: 100px;
   height: auto;
 }
@@ -381,6 +387,7 @@ body {
 .titlehead {
   text-align: center;
   color: #70f45d;
+  padding-top: 100px;
 }
 
 /* shooting star animation */
@@ -851,6 +858,7 @@ p {
 
 .kas-centered-section h3 {
   z-index: 1;
+  margin-top: 50px;
 }
 .kas-centered-section h3 .solutions-dec {
   -webkit-mask-image: linear-gradient(
@@ -1073,7 +1081,40 @@ p {
   padding-bottom: 120px;
   padding-top: 30px;
 }
-
+.section-4 .meet-wrap {
+  text-align: center;
+  padding: 40px 0px;
+}
+.section-4 .meet-wrap h3 {
+  font-size: 24px;
+  color: #70f45d;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.section-4 .meet-wrap .meet-btn button {
+  border-radius: 64px;
+  border-radius: 64px;
+  background: linear-gradient(
+    335deg,
+    #1e2c1c 100%,
+    #418e3600 0%,
+    #70f45d21 20%
+  );
+  box-shadow: 0px -1px 0px 0px #70f45d;
+  border: none;
+  color: #ffffff;
+  padding: 9px 41px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+  margin: 5px auto;
+  display: block;
+  position: relative;
+  z-index: 9;
+}
 /* section5 */
 
 .section-5 {
@@ -1121,7 +1162,6 @@ p {
   background-color: #f4f4f4;
   overflow: hidden;
   border-radius: 10px;
-  height: 242px;
   transition: transform 0.5s ease;
 }
 .dq-card:hover {
@@ -1131,35 +1171,28 @@ p {
   padding-left: 8%;
 }
 .dq-card-body {
-  padding-top: 30px;
+  padding: 30px 0px;
+  text-align: center;
 }
-
-.section5-icon {
-  position: absolute;
-  top: 30px;
-  left: 16px;
+.dq-card-body img {
+  height: 60px;
 }
 
 .dq-card-title {
+  margin-top: 10px;
   font-size: 25px;
-  padding-left: 92px;
-  text-align: left;
+  text-align: center;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-}
-
-.dq-card-content {
-  text-align: left;
-  padding-left: 92px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-size: 14px;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
+  color: #101010;
+  margin-bottom: 0px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* section 6 */
