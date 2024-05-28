@@ -364,11 +364,13 @@ body {
 }
 
 /* Testomonials css start*/
-.section-9 {
+/* .section-9 {
   margin-left: 130px;
   margin-right: 130px;
+} */
+.section-9 .testimonial-carousel .slick-list {
+  padding: 50px !important;
 }
-
 .section-9 .sec-6-heading {
   width: 50%;
   margin: 25px auto 0px;
@@ -410,57 +412,70 @@ body {
   color: #ffffff;
   border-radius: 17.921px;
   border: 0.996px solid #505050;
-  background: linear-gradient(90deg, #1a1a1a 0%, #171717 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(193, 193, 193, 0.09) 0%,
+    rgba(90, 87, 87, 0.09) 100%
+  );
+
   cursor: pointer;
+  padding: 80px 60px 46px;
 }
 
 .testimonial-box.blur-effect .content {
-  filter: blur(5px);
+  /* filter: blur(5px); */
   /* Apply blur effect to content */
 }
 
 .content {
   justify-content: left;
-  padding: 30px 25px 20px;
   transition: filter 0.3s ease;
+  position: relative;
   /* Smooth transition for the blur effect */
 }
-
-.user-info {
-  display: flex;
-  align-items: left;
-  padding: 10px 25px 30px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+.content .profile-img {
+  position: absolute;
+  top: -130px;
+  left: 40%;
 }
-
-.user-info .name {
-  text-align: left;
-  font-size: 20.77px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-}
-.user-info .designation {
-  text-align: left;
-  font-size: 16.15px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-}
-.user-info img {
-  width: 50px;
-  height: 50px;
+.content .profile-img img {
+  width: 89px;
+  height: 89px;
   border-radius: 50%;
   margin-right: 10px;
   object-fit: cover;
 }
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+.user-info .name {
+  text-align: center;
+  font-size: 27px;
+  font-family: "cal-sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: #70f45d;
+  line-height: 30px;
+  margin-bottom: -2px;
+}
+.user-info .designation {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
 .details {
   flex: 1;
+  min-height: 50px;
 }
 
 .name {
@@ -480,6 +495,7 @@ body {
   font-variation-settings: "slnt" 0;
   font-size: 16.15px;
   color: rgba(255, 255, 255, 1);
-  text-align: left;
+  text-align: center;
+  min-height: 140px;
 }
 /* Testomonials css end*/
