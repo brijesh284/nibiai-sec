@@ -366,6 +366,7 @@ body {
   font-family: "Inter";
   font-optical-sizing: auto;
   font-weight: 700;
+  margin-top: 20px;
 }
 
 .try-now-btn-two:hover {
@@ -382,6 +383,7 @@ body {
   text-align: center;
   /* background-image: url("../images/headerdown.png"); */
   padding-bottom: 200px;
+  padding-top: 25px;
 }
 
 .titlehead {
@@ -762,6 +764,8 @@ body {
   font-style: normal;
   font-variation-settings: "slnt" 0;
   font-size: 12px;
+  width: 80%;
+  margin: auto;
 }
 
 #kas-card {
@@ -976,7 +980,7 @@ p {
   left: 1px;
   top: 1px;
   border-radius: 20px;
-  background: linear-gradient(rgb(0 42 2) 0%, rgb(2, 2, 2) 57%);
+  background: linear-gradient(rgb(29 46 29) 0%, rgb(2, 2, 2) 57%);
   z-index: -9;
 }
 .section4-card:hover {
@@ -1011,7 +1015,7 @@ p {
 
 .section4-card-content p {
   margin-bottom: 0;
-  color: rgba(117, 117, 117, 1);
+  color: #bbbbbb;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -1093,14 +1097,13 @@ p {
 }
 .section-4 .meet-wrap .meet-btn button {
   border-radius: 64px;
-  border-radius: 64px;
   background: linear-gradient(
     335deg,
-    #1e2c1c 100%,
+    #08080800 100%,
     #418e3600 0%,
     #70f45d21 20%
   );
-  box-shadow: 0px -1px 0px 0px #70f45d;
+  box-shadow: 0px -1px 0px 0px #dcf1d9;
   border: none;
   color: #ffffff;
   padding: 9px 41px;
@@ -1114,6 +1117,10 @@ p {
   display: block;
   position: relative;
   z-index: 9;
+}
+.section-4 .meet-wrap .meet-btn button:hover {
+  box-shadow: 0px -1px 0px 0px #70f45d;
+  color: #70f45d;
 }
 /* section5 */
 
@@ -1171,8 +1178,13 @@ p {
   padding-left: 8%;
 }
 .dq-card-body {
-  padding: 30px 0px;
   text-align: center;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 .dq-card-body img {
   height: 60px;
@@ -1189,10 +1201,6 @@ p {
   font-variation-settings: "slnt" 0;
   color: #101010;
   margin-bottom: 0px;
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* section 6 */
@@ -1283,7 +1291,7 @@ p {
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-  color: #757575;
+  color: #bbbbbb;
   font-size: 12px;
 }
 
@@ -1328,6 +1336,101 @@ p {
 .cardBody {
   padding: 30px 30px 40px 30px;
   color: white;
+}
+/* scoping-section */
+.scoping-section {
+  position: relative;
+  padding-bottom: 100px;
+}
+.scoping-section::after {
+  content: "";
+  position: absolute;
+  background-image: url(..//images/scoping-bg.svg);
+  width: 35%;
+  height: 81%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.scoping-section .scoping-container {
+  width: 90%;
+  margin: auto;
+}
+.scoping-section .scoping-number ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  justify-content: center;
+}
+.scoping-section .scoping-number ul li {
+  font-size: 280px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  background: -webkit-linear-gradient(180deg, #84ff72 0%, #3aa82a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 305px;
+  opacity: 0.5;
+}
+.scoping-section .scoping-number ul .active {
+  opacity: 1;
+}
+.scoping-section .scoping-details {
+  width: 80%;
+}
+.scoping-section .scoping-details .scoping-details-inner {
+  margin-top: 60px;
+}
+.scoping-section .scoping-details .scoping-details-inner h3 {
+  font-size: 42px;
+  line-height: 50px;
+  color: #70f45d;
+  font-family: "cal-sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.scoping-section .scoping-details .scoping-details-inner ul {
+  margin: 0;
+}
+.scoping-section .scoping-details .scoping-details-inner ul li {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #ebebeb;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+.scoping-section .scoping-details .scoping-details-inner ul li span {
+  font-weight: bold;
+  color: #fff;
+}
+/* clientele-section */
+.clientele-section {
+  padding: 100px 0px;
+}
+.clientele-section .clientele-title {
+  padding-bottom: 80px;
+}
+.clientele-section .clientele-title h1 {
+  font-weight: bold;
+  font-size: 55px;
+  color: #70f45d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.clientele-section .clientele-title p {
+  color: #9e9e9e;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.clientele-section .clientele-slider li img {
+  height: 70px;
+  width: 230px;
 }
 
 /* faq */
