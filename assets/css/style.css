@@ -750,11 +750,11 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
-.award-section .lead-more {
+.lead-more {
   text-align: center;
   padding-top: 80px;
 }
-.award-section .lead-more a {
+.lead-more a {
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 300;
@@ -1893,4 +1893,8 @@ p {
 .foort-link:hover {
   color: #fff;
   /* Change link color on hover */
+}
+/* questions-section */
+.questions-section {
+  padding: 100px 0px;
 }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nibi AI - Faqs</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/js/slick-1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/js/slick-1.8.1/slick/slick-theme.css"
+    />
+    <!-- smooth scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css"
+    />
+    <style>
+      .balls {
+        background: #000;
+        width: 100%;
+        height: 300px;
+      }
+
+      .balls b {
+        border-radius: 50%;
+      }
+      [data-scroll-container] {
+        overflow: hidden;
+        max-height: 100vh;
+      }
+      .foort-container {
+        padding: 210px 210px 60px 210px;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      section.case_studie_sldier_container {
+        /*    min-height: 30vh;*/
+      }
+      div#case_studie_sldier {
+        width: 100%;
+        margin: auto;
+        margin-top: 5em;
+      }
+      .slide_contant_container .slide_description {
+        margin-bottom: 30px;
+      }
+      .slide_container {
+        width: 100%;
+        float: left;
+      }
+      .slide_contant_container {
+        width: 70%;
+        float: left;
+        padding: 0 20px;
+      }
+      .slide_img_container {
+        width: 30%;
+        float: left;
+      }
+      img.slide_img {
+        width: 100%;
+        height: auto;
+      }
+      .slide_title h1 {
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+      .slide_description p {
+        color: rgb(205 202 202);
+        letter-spacing: 1px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        text-align: start;
+        font-size: 16px;
+      }
+      .slide_btn {
+        margin-top: 20px;
+      }
+      .slide_btn button {
+        background-color: #605b5b33;
+        color: #fff;
+        padding: 14px 33px;
+        border-radius: 35px;
+        cursor: pointer;
+        border-radius: 50px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.15) 0%,
+          rgba(153, 153, 153, 0.15) 125.34%
+        );
+        border: 1px solid rgb(78 76 76);
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 18.24px;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+      .slide_btn button:hover {
+        background: #155c15;
+        color: #fff;
+        box-shadow: 0 0 5px #13b42e57, 0 0 25px #075e165e, 0 0 50px #06d82952,
+          0 0 100px #155c15;
+        border: 1px solid #14e014;
+      }
+      .slide_container {
+        width: 100%;
+        float: left;
+        padding: 50px 40px;
+        background: linear-gradient(rgb(112 244 93 / 50%) 0%, rgb(2, 2, 2) 57%);
+        position: relative;
+        color: #ffffff;
+        border-radius: 20px;
+        transition: transform 0.5s ease;
+        display: flex;
+        align-items: center;
+        border: 1px solid #193814;
+      }
+      .carousel-control.left {
+        right: 100% !important;
+        left: auto;
+      }
+      .carousel-control.right {
+        left: 100% !important;
+        right: auto;
+      }
+      .slider_heding h1 {
+        font-weight: bold;
+        font-size: 55px;
+        color: #70f45d;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stars1"></div>
+    <section class="shooting-star">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </section>
+
+    <main data-scroll-container>
+      <section class="questions-section">
+        <div class="container">
+          <div class="faq-title">
+            <div style="text-align: center">
+              <button class="ai-btn">FAQ’s</button>
+            </div>
+            <h1 class="sec-6-heading text-center">Your Questions Answered</h1>
+            <p class="faq-head-para">
+              Some quetions we get a lot. We have answers.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"
+      integrity="sha512-3f8C6NAQZv0YfwHFnjF231IIVcfZPnzL8EcHhNlzcoSRoEvC/iKDbtC+oYvL+0fRmEUMUYSvrZSE08TcRZYpgA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var Scrollbar = window.Scrollbar;
+
+      var options = {
+        // Specify options here
+        damping: 0.05, // Adjust damping for the smoothness of scrolling
+        thumbMinSize: 20, // Set the minimum size of the scrollbar thumb
+        // Add more options as needed
+      };
+
+      // Make sure the element exists and the options object is properly defined
+      var scrollbarElement = document.querySelector("[data-scroll-container]");
+      if (scrollbarElement) {
+        Scrollbar.init(scrollbarElement, options);
+      } else {
+        console.error("Scrollbar element not found.");
+      } // "use strict";
+    </script>
+  </body>
+</html>
