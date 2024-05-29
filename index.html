@@ -56,10 +56,10 @@
         overflow: hidden;
         max-height: 100vh;
       }*/
-      [data-scroll-container] {
+      /* [data-scroll-container] {
         overflow: hidden;
         max-height: 100vh;
-      }
+      } */
       .foort-container {
         padding: 210px 210px 60px 210px;
       }
@@ -78,7 +78,7 @@
       <span></span>
     </section>
     <div id="stars1"></div>
-    <main data-scroll-container>
+    <main id="main-body">
       <!-- FIRST SECTION -->
       <header class="header main-head">
         <!-- <div id="particles-js" class="green-pattern"></div> -->
@@ -1495,37 +1495,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <!-- smooth scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+    <script src="assets/js/slick-1.8.1/scoping.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"
       integrity="sha512-3f8C6NAQZv0YfwHFnjF231IIVcfZPnzL8EcHhNlzcoSRoEvC/iKDbtC+oYvL+0fRmEUMUYSvrZSE08TcRZYpgA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- main-body-scrolling -->
     <script>
-      var Scrollbar = window.Scrollbar;
-
-      var options = {
-        // Specify options here
-        damping: 0.05, // Adjust damping for the smoothness of scrolling
-        thumbMinSize: 20, // Set the minimum size of the scrollbar thumb
-        // Add more options as needed
-      };
-
-      // Make sure the element exists and the options object is properly defined
-      var scrollbarElement = document.querySelector("[data-scroll-container]");
-      if (scrollbarElement) {
-        Scrollbar.init(scrollbarElement, options);
-      } else {
-        console.error("Scrollbar element not found.");
-      } // "use strict";
-      // const Locoscroll = new LocomotiveScroll({
-      //   el: document.querySelector("[data-scroll-container]"),
-      //   smooth: true,
-      //   tablet: { smooth: true },
-      //   smartphone: {
-      //     smooth: true,
-      //   },
-      // });
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("#main-body"),
+        smooth: true,
+        lerp: 0.05,
+      });
     </script>
     <!-- award-slider -->
     <script
