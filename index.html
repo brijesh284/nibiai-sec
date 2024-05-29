@@ -58,7 +58,7 @@
       }*/
       [data-scroll-container] {
         overflow: hidden;
-        max-height: 100vh;
+        max-height: 15300px;
       }
       .foort-container {
         padding: 210px 210px 60px 210px;
@@ -1583,12 +1583,15 @@
       };
 
       // Make sure the element exists and the options object is properly defined
-      var scrollbarElement = document.querySelector("[data-scroll-container]");
-      if (scrollbarElement) {
-        Scrollbar.init(scrollbarElement, options);
-      } else {
-        console.error("Scrollbar element not found.");
-      } // "use strict";
+  
+
+      // var scrollbarElement = document.querySelector("[data-scroll-container]");
+      // if (scrollbarElement) {
+      //   Scrollbar.init(scrollbarElement, options);
+      // } else {
+      //   console.error("Scrollbar element not found.");
+      // } // "use strict";
+  
       // const Locoscroll = new LocomotiveScroll({
       //   el: document.querySelector("[data-scroll-container]"),
       //   smooth: true,
@@ -1598,6 +1601,25 @@
       //   },
       // });
     </script>
+
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          setTimeout(function() {
+            // body...
+            var body = document.body,
+                html = document.documentElement;
+
+            var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                                   html.clientHeight, html.scrollHeight, html.offsetHeight );
+            $('[data-scroll-container]').css({'max-height': height+'px'})
+          },3000);
+        });
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector("[data-scroll-container]"),
+            smooth: true
+        });
+    </script>    
     <!-- award-slider -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
