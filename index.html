@@ -56,10 +56,10 @@
         overflow: hidden;
         max-height: 100vh;
       }*/
-      /* [data-scroll-container] {
+      [data-scroll-container] {
         overflow: hidden;
         max-height: 100vh;
-      } */
+      }
       .foort-container {
         padding: 210px 210px 60px 210px;
       }
@@ -78,7 +78,7 @@
       <span></span>
     </section>
     <div id="stars1"></div>
-    <main id="main-body">
+    <main data-scroll-container id="main-body">
       <!-- FIRST SECTION -->
       <header class="header main-head">
         <!-- <div id="particles-js" class="green-pattern"></div> -->
@@ -1502,13 +1502,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- main-body-scrolling -->
     <script>
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector("#main-body"),
-        smooth: true,
-        lerp: 0.05,
-      });
+      var Scrollbar = window.Scrollbar;
+
+      var options = {
+        // Specify options here
+        damping: 0.05, // Adjust damping for the smoothness of scrolling
+        thumbMinSize: 20, // Set the minimum size of the scrollbar thumb
+        // Add more options as needed
+      };
+
+      // Make sure the element exists and the options object is properly defined
+      var scrollbarElement = document.querySelector("[data-scroll-container]");
+      if (scrollbarElement) {
+        Scrollbar.init(scrollbarElement, options);
+      } else {
+        console.error("Scrollbar element not found.");
+      } // "use strict";
+      // const Locoscroll = new LocomotiveScroll({
+      //   el: document.querySelector("[data-scroll-container]"),
+      //   smooth: true,
+      //   tablet: { smooth: true },
+      //   smartphone: {
+      //     smooth: true,
+      //   },
+      // });
     </script>
     <!-- award-slider -->
     <script
