@@ -158,7 +158,14 @@ button.try-now-btn-two {
   margin-bottom: 25px;
   min-height: 70px;
 }
-.award-slider .award-inner {
+.award-body {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  gap: 40px;
+}
+.award-body .award-inner {
   position: relative;
   border-radius: 20px;
   padding: 10px 35px;
@@ -170,7 +177,7 @@ button.try-now-btn-two {
   width: 80%;
   margin: auto;
 }
-.award-slider .award-inner::after {
+.award-body .award-inner::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -181,7 +188,7 @@ button.try-now-btn-two {
   background: linear-gradient(rgb(0 0 0 / 69%) 0%, rgb(2, 2, 2) 57%);
   z-index: -9;
 }
-.award-slider img {
+.award-body img {
   width: 70%;
   margin: auto;
 }
@@ -1127,9 +1134,9 @@ p {
   padding: 40px 0px;
 }
 .section-4 .meet-wrap h3 {
-  font-size: 24px;
+  font-size: 36px;
   color: #70f45d;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   letter-spacing: 1px;
 }
 .section-4 .meet-wrap .meet-btn button {
@@ -1406,20 +1413,17 @@ p {
   justify-content: center;
 }
 .scoping-section .scoping-number ul li {
-  font-size: 280px;
+  font-size: 240px;
   font-family: "Inter", sans-serif;
   font-weight: bold;
   background: -webkit-linear-gradient(180deg, #84ff72 0%, #3aa82a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 305px;
+  line-height: 275px;
   opacity: 0.5;
 }
 .scoping-section .scoping-number ul .active {
   opacity: 1;
-}
-.scoping-section .scoping-details {
-  width: 80%;
 }
 .scoping-section .scoping-details .scoping-details-inner {
   margin-top: 60px;
@@ -1468,7 +1472,8 @@ p {
 }
 .clientele-section .clientele-slider li img {
   height: 50px;
-  width: 150px;
+  width: 80%;
+  object-fit: contain;
 }
 /* case-study-section */
 .case-study-section {
