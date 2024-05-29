@@ -1868,7 +1868,8 @@ p {
 }
 
 .foort-h4 {
-  color: #fff;
+  color: #ffffff50;
+  font-size: 18px;
   /* Set text color to white */
 }
 
@@ -1888,6 +1889,7 @@ p {
   color: #ccc;
   /* Set link color */
   padding-right: 110px;
+  font-size: 18px;
 }
 
 .foort-link:hover {
@@ -1897,4 +1899,68 @@ p {
 /* questions-section */
 .questions-section {
   padding: 100px 0px;
+  position: relative;
+  z-index: 9;
+}
+.questions-section::before {
+  content: "";
+  position: absolute;
+  background-image: url(..//images/case-studies/case-study-bg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.questions-section::after {
+  content: "";
+  position: absolute;
+  background-image: url(..//images/case-studies/case-study-bg-sec.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.questions-section .questions-body {
+  padding-top: 40px;
+}
+.questions-section .questions-body .questions-wrap {
+  text-align: start;
+  padding-top: 30px;
+  position: relative;
+  margin-top: 0px;
+}
+.questions-section .questions-body .questions-wrap span {
+  color: #87d57e;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  top: 0;
+}
+.questions-section .questions-body .questions-wrap h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 12px;
+  margin-top: 0px;
+  min-height: 60px;
+}
+.questions-section .questions-body .questions-wrap p {
+  color: #9e9e9e;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  text-align: start;
+  min-height: 150px;
 }
