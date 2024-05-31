@@ -166,28 +166,21 @@ button.try-now-btn-two {
   gap: 40px;
 }
 .award-body .award-inner {
-  position: relative;
   border-radius: 20px;
   padding: 10px 35px;
-  background: linear-gradient(rgb(112 244 93 / 50%) 0%, rgb(2, 2, 2) 57%);
-  z-index: 99;
-  border-bottom: none;
+  border: 2px solid #99f38d5e;
+  background: linear-gradient(
+    180deg,
+    rgba(193, 193, 193, 0.09) 0%,
+    rgba(90, 87, 87, 0.09) 100%
+  );
+  border-radius: 24px;
   cursor: pointer;
   transition: all ease-in-out 0.5s;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
-.award-body .award-inner::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 1px;
-  border-radius: 20px;
-  background: linear-gradient(rgb(0 0 0 / 69%) 0%, rgb(2, 2, 2) 57%);
-  z-index: -9;
-}
+
 .award-body img {
   width: 70%;
   margin: auto;
@@ -765,9 +758,8 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 300;
-  border-bottom: 1px solid #87d57e;
+  text-decoration: underline;
   color: #87d57e;
-  text-decoration: none;
 }
 /* section three */
 
@@ -1294,6 +1286,7 @@ p {
   font-style: normal;
   font-variation-settings: "slnt" 0;
   border: none;
+  text-decoration: none !important;
 }
 .ai-btn:hover {
   background: #155c15;
@@ -1399,31 +1392,41 @@ p {
   background-repeat: no-repeat;
   z-index: -9;
 }
-
+.scoping-section .scoping-container {
+  width: 90%;
+  margin: auto;
+}
+.scoping-section .scoping-number ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  justify-content: center;
+}
+.scoping-section .scoping-number ul li {
+  font-size: 280px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  background: -webkit-linear-gradient(180deg, #84ff72 0%, #3aa82a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 305px;
+  opacity: 0.5;
+}
+.scoping-section .scoping-number ul .active {
+  opacity: 1;
+}
 .scoping-section .scoping-details {
-  margin-top: 60px;
+  width: 90%;
 }
 .scoping-section .scoping-details .scoping-details-inner {
-  border: 2px solid #99f38d5e;
-  border-radius: 24px;
-  padding: 35px 40px;
-  position: relative;
-}
-.scoping-section .scoping-details .scoping-details-inner::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  filter: blur();
-  background: #181818bf;
+  margin-top: 60px;
 }
 .scoping-section .scoping-details .scoping-details-inner h3 {
-  letter-spacing: 1px;
-  font-size: 52px;
-  line-height: 70px;
+  font-size: 42px;
+  line-height: 50px;
   color: #70f45d;
   font-family: "cal-sans", sans-serif;
   font-weight: 600;
@@ -1431,15 +1434,13 @@ p {
 }
 .scoping-section .scoping-details .scoping-details-inner ul {
   margin: 0;
-  padding-left: 15px;
-  min-height: 180px;
 }
 .scoping-section .scoping-details .scoping-details-inner ul li {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   color: #ebebeb;
   font-weight: 300;
-  margin-bottom: 14px;
+  margin-bottom: 24px;
 }
 .scoping-section .scoping-details .scoping-details-inner ul li span {
   font-weight: bold;
@@ -1644,10 +1645,7 @@ p {
   bottom: 0px;
   z-index: -1;
 }
-.case-study-section
-  .case-study-body
-  .case-study-wrap
-  .efficiency-img::after {
+.case-study-section .case-study-body .case-study-wrap .efficiency-img::after {
   content: "";
   position: absolute;
   background-image: url(..//images/case-studies/case-studies-5.png);
