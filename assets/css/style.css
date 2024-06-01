@@ -1467,7 +1467,7 @@ p {
   font-weight: 400;
 }
 .clientele-section .clientele-slider li img {
-  height: 50px;
+  height: 80px;
   width: 80%;
   object-fit: contain;
 }

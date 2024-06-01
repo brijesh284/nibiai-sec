@@ -43,6 +43,11 @@
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css"
     />
     <style>
+      @media (prefers-reduced-motion: no-preference) {
+        :root {
+          scroll-behavior: unset;
+        }
+      }
       .balls {
         background: #000;
         width: 100%;
@@ -57,14 +62,102 @@
         max-height: 100vh;
       }*/
       [data-scroll-container] {
-        overflow: hidden;
-        max-height: 15300px;
+        /*        overflow: hidden;*/
       }
       .foort-container {
         padding: 210px 210px 60px 210px;
       }
       ::-webkit-scrollbar {
         display: none;
+      }
+
+      @media only screen and (min-width: 994px) {
+        .clientele-section {
+          margin-top: -200px;
+          position: relative;
+          z-index: 100;
+        }
+        .scoping-section {
+          padding-bottom: 0px !important;
+        }
+        .scoping-details-inner {
+          position: sticky;
+          top: 0;
+        }
+        .scoping-section .scoping-details .scoping-details-inner {
+          margin-top: 0px !important;
+        }
+        .one_sec,
+        .two_sec,
+        .three_sec,
+        .four_sec,
+        .five_sec,
+        .six_sec,
+        .sevan_sec,
+        .eight_sec {
+          padding-top: 60px !important;
+          position: relative;
+          background: black;
+          height: 800px;
+        }
+        .one_sec:before {
+          content: "1";
+          left: -100%;
+        }
+        .two_sec:before {
+          content: "2";
+          left: -75%;
+        }
+        .three_sec:before {
+          content: "3";
+          left: -50%;
+        }
+        .four_sec:before {
+          content: "4";
+          left: -25%;
+        }
+        .five_sec:before {
+          content: "5";
+          left: -100%;
+        }
+        .six_sec:before {
+          content: "6";
+          left: -75%;
+        }
+        .sevan_sec:before {
+          content: "7";
+          left: -50%;
+        }
+        .eight_sec:before {
+          content: "8";
+          left: -25%;
+        }
+        .one_sec:before,
+        .two_sec:before,
+        .three_sec:before,
+        .four_sec:before,
+        .five_sec:before,
+        .six_sec:before,
+        .sevan_sec:before,
+        .eight_sec:before {
+          /*font-size: 280px;*/
+          font-size: 16vw;
+          font-family: "Inter", sans-serif;
+          font-weight: bold;
+          background: -webkit-linear-gradient(180deg, #84ff72 0%, #3aa82a 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          line-height: 240px;
+          opacity: 0.9;
+          position: absolute;
+          width: 25%;
+        }
+        .five_sec:before,
+        .six_sec:before,
+        .sevan_sec:before,
+        .eight_sec:before {
+          top: 340px;
+        }
       }
     </style>
   </head>
@@ -738,7 +831,7 @@
       <section class="scoping-section">
         <div class="scoping-container">
           <div class="row">
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6">
               <div class="scoping-number">
                 <ul>
                   <li class="active">1</li>
@@ -751,167 +844,211 @@
                   <li>8</li>
                 </ul>
               </div>
-            </div>
-            <div class="col-lg-6">
+            </div> -->
+            <div class="col-lg-12">
               <div class="scoping-details">
                 <div class="scoping-details-inner">
-                  <h3>Project Scoping</h3>
-                  <ul>
-                    <li>
-                      <span>Initial Consultation: </span> Discuss client needs,
-                      project goals, and specific requirements for the AI
-                      application and the Web app or mobile app to publish the
-                      AI application.
-                    </li>
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 one_sec">
+                      <h3>Project Scoping</h3>
+                      <ul>
+                        <li>
+                          <span>Initial Consultation: </span> Discuss client
+                          needs, project goals, and specific requirements for
+                          the AI application and the Web app or mobile app to
+                          publish the AI application.
+                        </li>
 
-                    <li>
-                      <span>Feasibility and KPI Study:</span> Assess the
-                      technical feasibility of the application, including AI
-                      capabilities and integration points and core Key
-                      Performance Indicators of the application.
-                    </li>
-                    <li>
-                      <span> Resource and Technology Assessment:</span> Identify
-                      necessary platforms, & hardware for development and
-                      deployment.
-                    </li>
-                    <li>
-                      <span> Architecture and Scope Document:</span> Prepare the
-                      complete scope with architecture, tech stack, resource
-                      plan, deliverables, impact of the application, performance
-                      considerations, budget and detailed timeline.
-                    </li>
-                    <li>
-                      <span>Project Management Setup:</span> Setting up kanban
-                      boards, communication channels, code repositories and
-                      CI/CD pipelines on platforms preferred by clients. We can
-                      also onboard clients to our platforms if required.
-                    </li>
-                  </ul>
+                        <li>
+                          <span>Feasibility and KPI Study:</span> Assess the
+                          technical feasibility of the application, including AI
+                          capabilities and integration points and core Key
+                          Performance Indicators of the application.
+                        </li>
+                        <li>
+                          <span> Resource and Technology Assessment:</span>
+                          Identify necessary platforms, &amp; hardware for
+                          development and deployment.
+                        </li>
+                        <li>
+                          <span> Architecture and Scope Document:</span> Prepare
+                          the complete scope with architecture, tech stack,
+                          resource plan, deliverables, impact of the
+                          application, performance considerations, budget and
+                          detailed timeline.
+                        </li>
+                        <li>
+                          <span>Project Management Setup:</span> Setting up
+                          kanban boards, communication channels, code
+                          repositories and CI/CD pipelines on platforms
+                          preferred by clients. We can also onboard clients to
+                          our platforms if required.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="scoping-details-inner">
-                  <h3>Data Preparation</h3>
-                  <ul>
-                    <li>
-                      <span> Data Collection:</span> Collect or define methods
-                      for acquiring the necessary datasets for the AI models.
-                    </li>
-                    <li>
-                      <span> Data Cleaning and Preprocessing:</span> Process
-                      data to ensure quality and readiness for model training.
-                    </li>
-                  </ul>
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 two_sec">
+                      <h3>Data Preparation</h3>
+                      <ul>
+                        <li>
+                          <span> Data Collection:</span> Collect or define
+                          methods for acquiring the necessary datasets for the
+                          AI models.
+                        </li>
+                        <li>
+                          <span> Data Cleaning and Preprocessing:</span> Process
+                          data to ensure quality and readiness for model
+                          training.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="scoping-details-inner">
-                  <h3>AI Model Development</h3>
-                  <ul>
-                    <li>
-                      <span> Algorithm Selection:</span> Choose the most
-                      suitable algorithms for the task (e.g., for natural
-                      language processing or image recognition).
-                    </li>
-                    <li>
-                      <span> Model Prototyping:</span> Build prototypes to test
-                      concepts using selected algorithms.
-                    </li>
-                    <li>
-                      <span>Model Training and Validation:</span> Train the
-                      models using the full dataset, then validate to ensure
-                      accuracy and performance.
-                    </li>
-                  </ul>
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 three_sec">
+                      <h3>AI Model Development</h3>
+                      <ul>
+                        <li>
+                          <span> Algorithm Selection:</span> Choose the most
+                          suitable algorithms for the task (e.g., for natural
+                          language processing or image recognition).
+                        </li>
+                        <li>
+                          <span> Model Prototyping:</span> Build prototypes to
+                          test concepts using selected algorithms.
+                        </li>
+                        <li>
+                          <span>Model Training and Validation:</span> Train the
+                          models using the full dataset, then validate to ensure
+                          accuracy and performance.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="scoping-details-inner">
-                  <h3>Application Development</h3>
-                  <ul>
-                    <li>
-                      <span> Application Design:</span> Design the user
-                      interface and user experience based on the AI
-                      functionalities.
-                    </li>
-                    <li>
-                      <span>System Architecture:</span> Develop a robust system
-                      architecture that supports both the application and AI
-                      components efficiently.
-                    </li>
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 four_sec">
+                      <h3>Application Development</h3>
+                      <ul>
+                        <li>
+                          <span> Application Design:</span> Design the user
+                          interface and user experience based on the AI
+                          functionalities.
+                        </li>
+                        <li>
+                          <span>System Architecture:</span> Develop a robust
+                          system architecture that supports both the application
+                          and AI components efficiently.
+                        </li>
 
-                    <li>
-                      <span>Development:</span> Write code for the application,
-                      integrating AI models and ensuring the system is scalable
-                      and secure.
-                    </li>
-                    <li>
-                      <span>Establishing Communication:</span> Setup the
-                      communication protocols between AI models and the end
-                      application ( eg Socket streaming, Kafka, MQTT)
-                    </li>
-                    <li>
-                      <span>Testing:</span> Conduct thorough testing to ensure
-                      the application’s functionality and integration with AI
-                      models work seamlessly..
-                    </li>
-                  </ul>
+                        <li>
+                          <span>Development:</span> Write code for the
+                          application, integrating AI models and ensuring the
+                          system is scalable and secure.
+                        </li>
+                        <li>
+                          <span>Establishing Communication:</span> Setup the
+                          communication protocols between AI models and the end
+                          application ( eg Socket streaming, Kafka, MQTT)
+                        </li>
+                        <li>
+                          <span>Testing:</span> Conduct thorough testing to
+                          ensure the application’s functionality and integration
+                          with AI models work seamlessly..
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="scoping-details-inner">
-                  <h3>Development & Integration</h3>
-                  <ul>
-                    <li>
-                      <span> MLOps Strategy:</span> Determine the best approach
-                      for deploying the application, including on edge devices
-                      if necessary for computer vision tasks.
-                    </li>
-                    <li>
-                      <span> Integration:</span> Seamlessly integrate the AI
-                      models with the application, ensuring compatibility with
-                      existing client systems.
-                    </li>
-                  </ul>
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 five_sec">
+                      <h3>Development & Integration</h3>
+                      <ul>
+                        <li>
+                          <span> MLOps Strategy:</span> Determine the best
+                          approach for deploying the application, including on
+                          edge devices if necessary for computer vision tasks.
+                        </li>
+                        <li>
+                          <span> Integration:</span> Seamlessly integrate the AI
+                          models with the application, ensuring compatibility
+                          with existing client systems.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="scoping-details-inner">
-                  <h3>Monitoring, Maintenance, and Updates</h3>
-                  <ul>
-                    <li>
-                      <span> Performance Monitoring:</span> Regularly monitor
-                      the application to ensure optimal performance and
-                      functionality.
-                    </li>
-                    <li>
-                      <span>Iterative Improvements:</span> Continuously improve
-                      the application based on user feedback and new
-                      requirements.
-                    </li>
-                    <li>
-                      <span>Model Updates:</span> Update AI models to
-                      accommodate changes in data or to improve efficiency.
-                    </li>
-                  </ul>
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 six_sec">
+                      <h3>Monitoring, Maintenance, and Updates</h3>
+                      <ul>
+                        <li>
+                          <span> Performance Monitoring:</span> Regularly
+                          monitor the application to ensure optimal performance
+                          and functionality.
+                        </li>
+                        <li>
+                          <span>Iterative Improvements:</span> Continuously
+                          improve the application based on user feedback and new
+                          requirements.
+                        </li>
+                        <li>
+                          <span>Model Updates:</span> Update AI models to
+                          accommodate changes in data or to improve efficiency.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="scoping-details-inner">
-                  <h3>Documentation & Client Training</h3>
-                  <ul>
-                    <li>
-                      <span> Documentation:</span> Provide detailed
-                      documentation of the application and AI system.
-                    </li>
-                    <li>
-                      <span>Training:</span> Educate client teams on how to
-                      operate and maintain the application.
-                    </li>
-                  </ul>
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 sevan_sec">
+                      <h3>Documentation & Client Training</h3>
+                      <ul>
+                        <li>
+                          <span> Documentation:</span> Provide detailed
+                          documentation of the application and AI system.
+                        </li>
+                        <li>
+                          <span>Training:</span> Educate client teams on how to
+                          operate and maintain the application.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="scoping-details-inner">
-                  <h3>Support and Scalability</h3>
-                  <ul>
-                    <li>
-                      <span> Ongoing Support:</span> Offer technical support for
-                      any issues arising post-deployment.
-                    </li>
-                    <li>
-                      <span> Scalability:</span> Help clients scale the
-                      application as needed to handle increased load or to
-                      extend functionality.
-                    </li>
-                  </ul>
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 eight_sec">
+                      <h3>Support and Scalability</h3>
+                      <ul>
+                        <li>
+                          <span> Ongoing Support:</span> Offer technical support
+                          for any issues arising post-deployment.
+                        </li>
+                        <li>
+                          <span> Scalability:</span> Help clients scale the
+                          application as needed to handle increased load or to
+                          extend functionality.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1558,6 +1695,29 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const lenis = new Lenis({
+          duration: 5, // Set scroll speed to 0.5
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
+          smooth: true,
+          direction: "vertical", // vertical, horizontal
+          gestureDirection: "vertical", // vertical, horizontal, both
+          mouseMultiplier: 1,
+          smoothTouch: false,
+          touchMultiplier: 2,
+          infinite: false,
+        });
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+      });
+    </script>
     <!-- smooth scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
     <script
@@ -1597,8 +1757,8 @@
       // });
     </script>
 
-    <script src="locomotive-scroll.min.js"></script>
-    <script>
+    <script src="assets/js/locomotive-scroll.min.js"></script>
+    <!--    <script>
       $(document).ready(function () {
         setTimeout(function () {
           // body...
@@ -1619,7 +1779,7 @@
         el: document.querySelector("[data-scroll-container]"),
         smooth: true,
       });
-    </script>
+    </script> --> 
     <!-- award-slider -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -1793,12 +1953,17 @@
                   const $lottieContainer = $(this);
                   const $lottiePlayer = $lottieContainer.find("lottie-player");
 
+                  var lottiePlayer_ = $lottiePlayer.get(0);
+
+                  // // Speed ko set karna (2 ka matlab double speed)
+                  lottiePlayer_.setSpeed(2);
+
                   // Pause the animation initially
                   $lottiePlayer.get(0).pause();
 
                   // When mouse enters the container, play the animation
                   $lottieContainer.on("mouseenter", function () {
-                    $lottiePlayer.get(0).play();
+                    lottiePlayer_.play();
                   });
 
                   // When mouse leaves the container, pause the animation
