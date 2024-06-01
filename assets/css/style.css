@@ -419,6 +419,7 @@ body {
 
 /* shooting star animation */
 #stars1 {
+  position: fixed;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -511,7 +512,8 @@ body {
 }
 
 .shooting-star span {
-  position: absolute;
+  /*position: absolute;*/
+  position: fixed;
   top: 50%;
   left: 10%;
   width: 4px;
