@@ -1931,6 +1931,28 @@
             "https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js",
             function () {
               setTimeout(function (argument) {
+                $(".section4-card").each(function (index) {
+                  const $lottieContainer = $(this);
+                  const $lottiePlayer = $lottieContainer.find("lottie-player");
+
+                  var lottiePlayer_ = $lottiePlayer.get(0);
+
+                  // // Speed ko set karna (2 ka matlab double speed)
+                  lottiePlayer_.setSpeed(4);
+
+                  // Pause the animation initially
+                  $lottiePlayer.get(0).pause();
+
+                  // When mouse enters the container, play the animation
+                  $lottieContainer.on("mouseenter", function () {
+                    lottiePlayer_.play();
+                  });
+
+                  // When mouse leaves the container, pause the animation
+                  $lottieContainer.on("mouseleave", function () {
+                    $lottiePlayer.get(0).pause();
+                  });
+                });
                 $(".lottie-container").each(function (index) {
                   const $lottieContainer = $(this);
                   const $lottiePlayer = $lottieContainer.find("lottie-player");
