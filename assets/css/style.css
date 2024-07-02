@@ -1392,6 +1392,7 @@ p {
   font-size: 51.95px;
   font-weight: bold;
   z-index: 6;
+  width: 35%;
 }
 /* scoping-section */
 .scoping-section {
