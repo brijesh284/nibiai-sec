@@ -281,6 +281,7 @@ body {
   position: absolute;
   top: -130px;
   left: 40%;
+  display: none;
 }
 .content .profile-img img {
   width: 89px;
