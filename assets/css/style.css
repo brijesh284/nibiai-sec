@@ -1507,6 +1507,7 @@ p {
   height: 100%;
   left: 0;
   top: 0;
+  z-index: -1;
 }
 .case-study-section::before {
   content: "";
@@ -1520,6 +1521,9 @@ p {
   right: 0;
   bottom: 0;
 }
+.case-study-section .case-study-title {
+  padding-bottom: 60px;
+}
 .case-study-section .case-study-body .case-study-wrap {
   background: linear-gradient(
     180deg,
@@ -1531,6 +1535,7 @@ p {
   border-radius: 24px;
   transition: all ease-in-out 0.5s;
   overflow: hidden;
+  margin: 0px 20px;
 }
 .case-study-section .case-study-body .case-study-wrap .case-wraping {
   display: none;
