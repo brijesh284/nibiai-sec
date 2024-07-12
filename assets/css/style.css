@@ -2089,11 +2089,11 @@ p {
 }
 
 .case-study-section .case-studie-slider {
-  height: 100vh;
-  padding: 120px 12vw;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    padding: 120px 12vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0;
 }
 .case-study-section .case-study-body .case-study-wrap {
   min-width: 35vw;

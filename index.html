@@ -1917,33 +1917,34 @@
       // });
 
       gsap.registerPlugin(ScrollTrigger);
+      
+      function initialiseGSAPScrollTriggerPinningHorizontal() {
+        console.log('------');
+        let sectionPin = document.querySelector(".case-studie-slider");
+
+        let containerAnimation = gsap.to(sectionPin, {
+          scrollTrigger: {
+            trigger: ".case-study-section",
+            start: "top top",
+            end: () => "+=" + sectionPin.offsetWidth,
+            pin: true,
+            scrub: true,
+          },
+          x: () =>
+            -(
+              sectionPin.scrollWidth - document.documentElement.clientWidth
+            ) + "px",
+          ease: "none",
+        });
+      }
 
       (function ($) {
         $(document).ready(function () {
           initialiseApp();
 
           function initialiseApp() {
-            initialiseGSAPScrollTriggerPinningHorizontal();
+            // initialiseGSAPScrollTriggerPinningHorizontal()
             initialiseLenisScroll();
-          }
-
-          function initialiseGSAPScrollTriggerPinningHorizontal() {
-            let sectionPin = document.querySelector(".case-studie-slider");
-
-            let containerAnimation = gsap.to(sectionPin, {
-              scrollTrigger: {
-                trigger: ".case-study-section",
-                start: "top top",
-                end: () => "+=" + sectionPin.offsetWidth,
-                pin: true,
-                scrub: true,
-              },
-              x: () =>
-                -(
-                  sectionPin.scrollWidth - document.documentElement.clientWidth
-                ) + "px",
-              ease: "none",
-            });
           }
 
           function initialiseLenisScroll() {
@@ -2263,6 +2264,7 @@
                     $lottiePlayer.get(0).pause();
                   });
                 });
+                initialiseGSAPScrollTriggerPinningHorizontal();
               }, 1000);
             }
           );
