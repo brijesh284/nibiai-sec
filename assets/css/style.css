@@ -1546,8 +1546,7 @@ p {
 }
 .case-study-section .case-study-body .case-study-wrap .case-inner-wrap {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-end;
 }
 .case-study-section .case-study-body .case-study-wrap .case-wraping {
   display: none;
@@ -1589,15 +1588,16 @@ p {
 .case-study-section .case-study-body .case-study-wrap .Similarity::before {
   content: "";
   position: absolute;
-  background-image: url(..//images/case-studies/case-studies-1.png);
+  background-image: url(..//images/case-studies/Case-Study-Thumbnail-Product-Similarity-1.jpg);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  width: 85%;
-  height: 85%;
-  right: 0;
-  bottom: 0;
+  background-position: top;
+  background-size: cover;
+  width: 99%;
+  height: 99%;
+  right: 2px;
+  bottom: 1px;
   z-index: -1;
+  border-radius: 24px;
 }
 .case-study-section .case-study-body .case-study-wrap .Similarity::after {
   content: "";
@@ -1644,43 +1644,44 @@ p {
 .case-study-section .case-study-body .case-study-wrap .retail-img::after {
   content: "";
   position: absolute;
-  background-image: url(..//images/case-studies/case-studies-3.png);
+  background-image: url(..//images/case-studies/Case-Study-Thumbnail-Prince-William-2.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 80%;
-  height: 80%;
-  right: 0px;
-  bottom: -15px;
+  background-position: top;
+  background-size: cover;
+  width: 99%;
+  height: 99%;
+  right: 2px;
+  bottom: 1px;
   z-index: -1;
+  border-radius: 24px;
 }
 .case-study-section .case-study-body .case-study-wrap .smart-img::after {
   content: "";
   position: absolute;
-  background-image: url(..//images/case-studies/case-studies-4.png);
+  background-image: url(..//images/case-studies/Case-Study-Thumbnail-Chennai-Silks-1.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top;
   background-size: cover;
-  width: 99.5%;
-  height: 100%;
-  left: 2px;
-  bottom: -1%;
+  width: 99%;
+  height: 99%;
+  right: 2px;
+  bottom: 1px;
   z-index: -1;
-  overflow: hidden;
   border-radius: 24px;
 }
 .case-study-section .case-study-body .case-study-wrap .industries-img::after {
   content: "";
   position: absolute;
-  background-image: url(..//images/case-studies/case-studies-5.png);
+  background-image: url(..//images/case-studies/Case-Study-Thumbnail-Tupperware-1.jpg);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  width: 85%;
-  height: 85%;
-  right: 0;
-  bottom: 0px;
+  background-position: top;
+  background-size: cover;
+  width: 99.5%;
+  height: 99%;
+  right: 1px;
+  bottom: 1px;
   z-index: -1;
+  border-radius: 24px;
 }
 .case-study-section .case-study-body .case-study-wrap .efficiency-img::after {
   content: "";
@@ -2015,4 +2016,85 @@ p {
   line-height: 22px;
   text-align: start;
   min-height: 150px;
+}
+
+/*For technologies section*/
+.technologies-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.technologie-item {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  /* cursor: pointer; */
+  border: 1px solid #b3b3b3;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.technologie-item img.img-fluid {
+  width: 75%;
+}
+.technologie-item:hover {
+  border: 1px solid #212529;
+  background: #212529;
+}
+.technologie-item.selected {
+  border: 1px solid #212529;
+  background: #212529;
+}
+.technologie-item-content {
+  display: none;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.technologie-item-content-dec {
+  color: #9e9e9e;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-size: 14px;
+  text-align: left;
+}
+.technologie-item-content-dec span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.technologie-item-content-title {
+  color: #212529;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section.case-study-section {
+  height: 100vh;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.case-study-section .case-studie-slider {
+  height: 100vh;
+  padding: 120px 12vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.case-study-section .case-study-body .case-study-wrap {
+  min-width: 35vw;
 }
