@@ -522,18 +522,18 @@
 
       <!-- SEVENTH SECTION -->
       <section class="section-5">
-        <div class="card section-5-card">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center top-section">
-                <h2 class="dq-card-head">Technologies</h2>
-                <h5 class="dq-card-heading">
-                  Discover our advanced tools for <br />
-                  efficient finance management and strategic insights.
-                </h5>
-              </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center top-section">
+              <h2 class="dq-card-head">Technologies</h2>
+              <h5 class="dq-card-heading">
+                Discover our advanced tools for <br />
+                efficient finance management and strategic insights.
+              </h5>
             </div>
-            <div class="row mt-3">
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-lg-10">
               <div class="technologies-row">
                 <div
                   class="technologie-item"
@@ -1917,9 +1917,9 @@
       // });
 
       gsap.registerPlugin(ScrollTrigger);
-      
+
       function initialiseGSAPScrollTriggerPinningHorizontal() {
-        console.log('------');
+        console.log("------");
         let sectionPin = document.querySelector(".case-studie-slider");
 
         let containerAnimation = gsap.to(sectionPin, {
@@ -1931,9 +1931,8 @@
             scrub: true,
           },
           x: () =>
-            -(
-              sectionPin.scrollWidth - document.documentElement.clientWidth
-            ) + "px",
+            -(sectionPin.scrollWidth - document.documentElement.clientWidth) +
+            "px",
           ease: "none",
         });
       }
