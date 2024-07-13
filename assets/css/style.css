@@ -1492,7 +1492,7 @@ p {
 }
 /* case-study-section */
 .case-study-section {
-  padding: 100px 0px;
+  padding: 0px 0px 100px 0px;
   position: relative;
 }
 .case-study-section::after {
