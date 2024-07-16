@@ -1164,10 +1164,16 @@ p {
 
 .section-5 {
   background-color: #000000;
-  padding-bottom: 60px;
-  /* padding-bottom: 60px; */
 }
-
+.section-5-card {
+  padding: 74px 0px;
+  border-radius: 74px;
+  cursor: pointer;
+  border: none;
+  margin-left: 40px;
+  margin-right: 40px;
+  overflow: hidden;
+}
 .top-section {
   padding-bottom: 50px;
 }
@@ -1175,7 +1181,7 @@ p {
 .dq-card-head {
   font-size: 60px;
   font-weight: 600;
-  color: #70f45d;
+  color: #101010;
 }
 
 .dq-card-heading {
@@ -2014,14 +2020,13 @@ p {
 .technologies-row {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-bottom: 1px solid #cacaca;
+  margin-bottom: 40px;
 }
 .technologie-item {
   width: 20%;
   text-align: center;
+  padding-bottom: 24px;
 }
 .technologie-item img {
   width: 50px;
@@ -2044,41 +2049,52 @@ p {
 }
 .technologie-item p {
   font-size: 18px;
-  color: #fff;
-  margin-top: 16px;
+  color: #8e8e8e;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
 }
 .technologies-row .selected p {
-  color: #70f45d;
+  color: #101010;
+  border-bottom: 1px solid #101010;
 }
 .technologie-item-content {
   display: none;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-bottom: 10px;
 }
-.technologie-item-content-dec {
-  color: #9e9e9e;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-  font-size: 14px;
-  text-align: left;
+.technologie-item-wrap {
+  display: flex;
+  align-content: flex-start;
+  gap: 22px;
+  margin-top: 45px;
 }
-.technologie-item-content-dec span {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
+.technologie-item-wrap .technologie-wrap-img {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
 }
-
-.technologie-item-content-title {
-  color: #70f45d;
+.technologie-item-wrap .technologie-wrap-img img {
+  width: 80%;
+}
+.technologie-item-wrap .technologie-wrap-dec {
+  width: 100%;
+}
+.technologie-item-wrap .technologie-wrap-dec h2 {
+  color: #000;
+  font-size: 28px;
   font-weight: 600;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+.technologie-item-wrap .technologie-wrap-dec p {
+  color: #505050;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  text-align: start;
+  font-family: "Inter", sans-serif;
 }
 
 .section.case-study-section {
