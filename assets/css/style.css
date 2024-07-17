@@ -2465,6 +2465,9 @@ p {
   .section-9 .sec-6-heading {
     width: 70%;
   }
+  .award-body .award-inner {
+    padding: 10px 15px;
+  }
 }
 @media only screen and (max-width: 375px) {
   .development-process-section .overlap-container .process-text {
