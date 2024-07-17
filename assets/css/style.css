@@ -1166,7 +1166,7 @@ p {
   background-color: #000000;
 }
 .section-5-card {
-  padding: 74px 0px;
+  padding: 74px 10%;
   border-radius: 74px;
   cursor: pointer;
   border: none;
@@ -1883,10 +1883,9 @@ p {
 
 .foort-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  /* background: linear-gradient(to bottom, #000000, #000000); */
-  padding: 210px 210px 210px 210px;
+  padding: 300px 0px 60px;
 }
 
 .foort-logo {
@@ -2085,14 +2084,12 @@ p {
   font-size: 28px;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -0.96px;
 }
 .technologie-item-wrap .technologie-wrap-dec p {
   color: #505050;
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
-  letter-spacing: -0.48px;
   text-align: start;
   font-family: "Inter", sans-serif;
 }
@@ -2115,4 +2112,332 @@ p {
 }
 .case-study-section .case-study-body .case-study-wrap {
   min-width: 35vw;
+}
+/* responsive */
+@media only screen and (max-width: 1200px) {
+  .menu {
+    justify-content: flex-end;
+  }
+  .section-2 h3 {
+    padding-bottom: 20px;
+  }
+  .section-2 h1 {
+    font-size: 46px;
+  }
+  .section-2 p {
+    font-size: 16px;
+  }
+  .jetson-img {
+    margin-top: 20px;
+  }
+  .kas-section-bg p {
+    width: 100%;
+    min-height: 60px;
+  }
+  .kas-card-block {
+    padding: 20px;
+  }
+  .section4-card {
+    height: 290px;
+  }
+  .scoping-section .scoping-details .scoping-details-inner h3 {
+    font-size: 38px;
+  }
+  .foort-container {
+    padding: 300px 0px 40px;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .section-5-right-card {
+    padding-left: 0%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .desktop_menu {
+    display: none;
+  }
+  .menu.main-header-menu {
+    justify-content: end;
+    margin-top: 22px;
+    overflow: visible;
+  }
+  /*Footer*/
+  .foort-container {
+    flex-direction: column;
+  }
+  .foort-links {
+    margin-right: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    /*    flex-direction: column;*/
+  }
+  .foort-section {
+    margin-right: 0;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .foort-section {
+    width: 33%;
+  }
+  .foort-h4 {
+    font-size: 20px;
+  }
+  .foort-link {
+    padding-right: 0;
+  }
+  /*  */
+  .section-5-card {
+    padding: 54px 4%;
+  }
+  .technologie-item {
+    width: auto;
+  }
+  .technologies-row {
+    justify-content: space-between;
+  }
+  .scoping-section {
+    padding-bottom: 0px;
+  }
+  .case-study-section .case-studie-slider {
+    padding: 60px 4vw;
+  }
+  .case-study-section .case-study-body .case-study-wrap .Similarity,
+  .case-study-section .case-study-body .case-study-wrap .retail-inner {
+    height: 300px;
+  }
+  .companies-title {
+    padding: 100px 0px;
+  }
+  .bag-body {
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 46px;
+  }
+  .shop {
+    padding-bottom: 100px;
+  }
+  .header h1 {
+    padding-top: 0px;
+  }
+  .section-5-right-card {
+    padding: 30px;
+  }
+  .nibi_heading,
+  .serviceofferedsection h1,
+  .dq-card-head,
+  .sec-6-heading,
+  .clientele-section .clientele-title h1,
+  .award-section h1 {
+    font-size: 42px;
+  }
+  .kas-centered-section h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .section-5-card,
+  .section-2-card {
+    border-radius: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .sec-7-head {
+    width: 100%;
+  }
+  .scoping-section .scoping-details {
+    width: 100%;
+  }
+  .clientele-section .clientele-title {
+    padding-bottom: 30px;
+  }
+  .case-study-section .case-study-title {
+    padding-bottom: 0px;
+  }
+  .testimonial-box {
+    padding: 30px 15px !important;
+  }
+  .review {
+    font-size: 14px !important;
+  }
+  .user-info .name {
+    font-size: 22px !important;
+  }
+  .faq-head-para {
+    font-size: 18px;
+  }
+  .mmm {
+    padding: 50px 20px;
+  }
+  .clientele-section {
+    padding: 90px 0px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .section-5-right-card {
+    padding: 40px 5px;
+  }
+  .section-2 h1 {
+    font-size: 38px;
+  }
+  .section-2 h3 {
+    font-size: 20px;
+  }
+  .section-2 p {
+    font-size: 14px;
+  }
+  .kas-section-bg h2 {
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
+  .kas-section-bg h5 {
+    font-size: 20px;
+  }
+  .kas-card-block-content {
+    margin-top: 10px;
+  }
+  .kas-section-bg {
+    padding: 90px 0px 0px;
+    color: #fff;
+  }
+  .kas-centered-section {
+    padding: 90px 0px;
+  }
+  .nibi_heading,
+  .serviceofferedsection h1,
+  .dq-card-head,
+  .sec-6-heading,
+  .clientele-section .clientele-title h1,
+  .award-section h1 {
+    font-size: 34px;
+  }
+  .featuresection {
+    padding-bottom: 30px;
+  }
+  .section-4 {
+    padding-top: 0px;
+  }
+  .section4-card {
+    height: auto;
+  }
+  .section-4 {
+    padding-bottom: 90px;
+  }
+  .dq-card-heading {
+    font-size: 16px;
+  }
+  .technologies-row {
+    justify-content: flex-start;
+    gap: 20px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 0px;
+  }
+  .technologie-item {
+    text-align: start;
+    width: auto;
+    padding-bottom: 0px;
+  }
+  .technologie-item p {
+    font-size: 16px;
+  }
+  .technologie-item-wrap .technologie-wrap-img {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+  }
+  .technologie-item-wrap .technologie-wrap-dec h2 {
+    font-size: 20px;
+  }
+  .technologie-item-wrap .technologie-wrap-dec p {
+    font-size: 14px;
+  }
+  .bg-image {
+    min-height: 300px;
+  }
+  .cardBody {
+    padding: 30px 20px 0px 20px;
+    color: white;
+  }
+  .scoping-section .scoping-details .scoping-details-inner h3 {
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .scoping-section .scoping-details .scoping-details-inner ul li {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .scoping-section .scoping-details .scoping-details-inner {
+    margin-top: 40px;
+  }
+  .case-study-section .case-study-body .case-study-wrap .Similarity,
+  .case-study-section .case-study-body .case-study-wrap .retail-inner {
+    height: 230px;
+    padding: 12px 20px;
+  }
+  .case-study-section .case-study-body .case-study-wrap button {
+    padding: 4px 12px;
+    font-size: 10px;
+    line-height: 24.54px;
+  }
+  .case-study-section .case-studie-slider {
+    padding: 60px 4vw 0px;
+  }
+  .section-9 .sec-6-heading {
+    width: 90%;
+    margin: 14px auto 0px;
+  }
+  .award-section {
+    padding: 50px 0px 0px;
+  }
+  .award-body {
+    width: 100%;
+    padding-left: 0px !important;
+  }
+  .faqs-section {
+    padding-top: 90px;
+  }
+  .faqs-section .faq-title::after {
+    content: "";
+    width: 100%;
+    height: 110px;
+    left: 0;
+    top: -40px;
+  }
+  .bag-accordion-button {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .bag-accordion-item .accordion-body p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Inter;
+    font-size: 14px;
+    padding: 15px;
+  }
+  .lead-more {
+    padding-top: 40px;
+  }
+  .bag-body {
+    margin: 0px auto 90px;
+  }
+  .faq-head-para {
+    font-size: 16px;
+  }
+  .mmm {
+    margin-bottom: 0px;
+  }
+  .foort-container {
+    padding: 110px 0 40px 0 !important;
+  }
+  .foort-section {
+    width: 50% !important;
+  }
+  .foort-h4 {
+    font-size: 18px;
+  }
+  .foort-link {
+    font-size: 14px;
+  }
 }
