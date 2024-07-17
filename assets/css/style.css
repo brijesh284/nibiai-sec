@@ -1491,6 +1491,9 @@ p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
+.clientele-section .clientele-slider {
+  padding-left: 0px;
+}
 .clientele-section .clientele-slider li img {
   height: 80px;
   width: 80%;
@@ -1557,7 +1560,7 @@ p {
     rgba(33, 33, 33, 0.37) 100%
   );
   width: 100%;
-  height: 400px;
+  height: 100%;
   top: 0;
   left: 0;
   display: flex;
@@ -2316,6 +2319,9 @@ p {
   .development-process-section .overlap-container .process-text {
     font-size: 19px;
   }
+  .case-study-section .case-study-body .case-study-wrap .case-wraping a img {
+    width: 20%;
+  }
   .nibi_heading,
   .serviceofferedsection h1,
   .dq-card-head,
@@ -2389,6 +2395,9 @@ p {
   .case-study-section .case-study-body .case-study-wrap .retail-inner {
     height: 230px;
     padding: 12px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
   }
   .case-study-section .case-study-body .case-study-wrap button {
     padding: 4px 12px;
