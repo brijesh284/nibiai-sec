@@ -2143,6 +2143,13 @@ p {
   .scoping-section .scoping-details .scoping-details-inner h3 {
     font-size: 38px;
   }
+  .section-5-card {
+    padding: 74px 3%;
+  }
+  .case-study-section .case-study-body .case-study-wrap .Similarity,
+  .case-study-section .case-study-body .case-study-wrap .retail-inner {
+    height: 300px;
+  }
   .foort-container {
     padding: 300px 0px 40px;
     justify-content: space-between;
@@ -2151,6 +2158,9 @@ p {
 @media only screen and (max-width: 1050px) {
   .section-5-right-card {
     padding-left: 0%;
+  }
+  .development-process-section .overlap-container .process-text {
+    font-size: 46px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -2186,7 +2196,7 @@ p {
   .foort-link {
     padding-right: 0;
   }
-  /*  */
+  /*  FOOTER_END*/
   .section-5-card {
     padding: 54px 4%;
   }
@@ -2202,9 +2212,9 @@ p {
   .case-study-section .case-studie-slider {
     padding: 60px 4vw;
   }
-  .case-study-section .case-study-body .case-study-wrap .Similarity,
-  .case-study-section .case-study-body .case-study-wrap .retail-inner {
-    height: 300px;
+  .development-process-section .overlap-container .process-text {
+    font-size: 33px;
+    width: auto;
   }
   .companies-title {
     padding: 100px 0px;
@@ -2302,6 +2312,9 @@ p {
   }
   .kas-centered-section {
     padding: 90px 0px;
+  }
+  .development-process-section .overlap-container .process-text {
+    font-size: 19px;
   }
   .nibi_heading,
   .serviceofferedsection h1,
@@ -2438,6 +2451,12 @@ p {
     font-size: 18px;
   }
   .foort-link {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .development-process-section .overlap-container .process-text {
+    top: 47%;
     font-size: 14px;
   }
 }
