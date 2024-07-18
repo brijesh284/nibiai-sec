@@ -1995,8 +1995,10 @@ p {
   .case-study-section .case-study-body .case-study-wrap .retail-inner {
     height: 300px;
   }
+  .section-6 {
+    padding: 170px 0px 100px;
+  }
   .foort-container {
-    padding: 300px 0px 40px;
     justify-content: space-between;
   }
 }
@@ -2006,6 +2008,9 @@ p {
   }
   .development-process-section .overlap-container .process-text {
     font-size: 46px;
+  }
+  .faqs-section {
+    padding-top: 90px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -2054,15 +2059,15 @@ p {
   .scoping-section {
     padding-bottom: 0px;
   }
+  .award-section {
+    padding: 0px;
+  }
   .case-study-section .case-studie-slider {
     padding: 60px 4vw;
   }
   .development-process-section .overlap-container .process-text {
     font-size: 33px;
     width: auto;
-  }
-  .companies-title {
-    padding: 100px 0px;
   }
   .bag-body {
     width: 100%;
@@ -2105,6 +2110,7 @@ p {
   }
   .case-study-section .case-study-title {
     padding-bottom: 0px;
+    padding-top: 40px;
   }
   .testimonial-box {
     padding: 30px 15px !important;
@@ -2126,6 +2132,24 @@ p {
   }
 }
 @media only screen and (max-width: 525px) {
+  .main-head .head-banner-main {
+    padding: 60px 0px;
+  }
+  .ai-power-section::after {
+    content: "";
+    height: 60%;
+    left: 0px;
+    top: -10%;
+  }
+  .clientele-section .nvidia-logo-main {
+    margin-bottom: 30px;
+  }
+  .clientele-section .nvidia-logo-main img {
+    width: 180px;
+  }
+  .section-9 .sec-6-heading {
+    width: 90%;
+  }
   .section-5-right-card {
     padding: 40px 5px;
   }
@@ -2247,18 +2271,21 @@ p {
     padding: 60px 4vw 0px;
   }
   .section-9 .sec-6-heading {
-    width: 90%;
+    width: 90% !important;
     margin: 14px auto 0px;
   }
   .award-section {
-    padding: 50px 0px 0px;
+    padding: 0px;
   }
   .award-body {
     width: 100%;
     padding-left: 0px !important;
   }
   .faqs-section {
-    padding-top: 90px;
+    padding-top: 20px;
+  }
+  .section-6 {
+    padding: 20px 0px 50px;
   }
   .faqs-section .faq-title::after {
     content: "";
@@ -2288,6 +2315,7 @@ p {
   }
   .mmm {
     margin-bottom: 0px;
+    padding: 0;
   }
   .foort-container {
     padding: 110px 0 40px 0 !important;
@@ -2301,11 +2329,14 @@ p {
   .foort-link {
     font-size: 14px;
   }
-  .section-9 .sec-6-heading {
-    width: 70%;
-  }
   .award-body .award-inner {
     padding: 10px 15px;
+  }
+  .clientele-section {
+    padding: 90px 0px 30px;
+  }
+  .ai-power-section {
+    padding: 100px 0px 50px !important;
   }
 }
 @media only screen and (max-width: 375px) {
