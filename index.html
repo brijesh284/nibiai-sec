@@ -220,9 +220,6 @@
       h1.sec-6-heading {
         text-align: center;
       }
-      .companies-title {
-        padding-top: 0px;
-      }
       @media only screen and (min-width: 992px) {
         .mobile-menu-icon {
           display: none !important;
@@ -255,14 +252,7 @@
   </head>
   <body>
     <!-- partial:index.partial.html -->
-    <section class="shooting-star">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </section>
-    <div id="stars1"></div>
+
     <main data-scroll-container id="main-body">
       <!-- FIRST SECTION -->
       <header class="header main-head">
@@ -294,10 +284,10 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row" style="width: 100%">
-            <div class="col-lg-12 titlehead">
-              <div class="mt-4">
+        <div class="head-banner-main">
+          <div class="container">
+            <div class="head-banner-inner">
+              <div class="titlehead">
                 <h1 class="text-back mb-0">
                   <span style="color: #fff"
                     >Unlock the Future of Innovation</span
@@ -305,13 +295,13 @@
                   Transform Your Business with AI
                 </h1>
               </div>
-            </div>
-            <div class="col-lg-12 shop">
-              <p class="text-white">
-                Discover how we revolutionize your business and accelerate your
-                growth with <br />
-                our advanced Artificial Intelligence services
-              </p>
+              <div class="shop">
+                <p class="text-white">
+                  Discover how we revolutionize your business and accelerate
+                  your growth with <br />
+                  our advanced Artificial Intelligence services
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -1151,196 +1141,182 @@
             <button class="ai-btn">Our Approach</button>
             <h1 class="sec-6-heading">Business Growth through AI Excellence</h1>
           </div>
-          <!-- moving ball of first section -->
-          <!-- <div class="arrow-container animated fadeInDown">
-        <div class="arrow-2"></div>
-        <div class="arrow-2"></div>
-        <div class="arrow-1 animated hinge infinite zoomIn"></div>
-      </div>
-      <div class="arrow-container1 animated fadeInDown">
-        <div class="arrow-21"></div>
-        <div class="arrow-21"></div>
-        <div class="arrow-11 animated hinge infinite zoomIn"></div>
-      </div>
-      <div class="arrow-container12 animated fadeInDown">
-        <div class="arrow-212"></div>
-        <div class="arrow-212"></div>
-        <div class="arrow-112 animated hinge infinite zoomIn"></div>
-      </div> -->
-        </div>
-      </section>
+          <!-- NINTH SECTION -->
+          <section class="section-7">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                  <div class="card qr-card lottie-container">
+                    <div class="section-7-image">
+                      <div class="icon-image-wrap">
+                        <lottie-player
+                          src="assets/icons/sec-1.json"
+                          background="transparent"
+                          speed="1"
+                          style="width: 172px; height: 172px"
+                          loop
+                          autoplay
+                        ></lottie-player>
+                      </div>
+                    </div>
+                    <div class="card-body cardBody">
+                      <h5 class="card-title sec-7-head">
+                        Proven Expertise in Scalable AI Solutions
+                      </h5>
+                      <p class="card-text sec-7-content">
+                        With proven expertise in scalable AI solutions, our team
+                        has developed battle-tested AI SaaS products serving
+                        over 250 users, showcasing our ability to design,
+                        develop, and scale complex AI technologies.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card qr-card lottie-container">
+                    <div class="section-7-image">
+                      <div class="icon-image-wrap">
+                        <lottie-player
+                          id="lottie"
+                          src="assets/icons/sec-2.json"
+                          background="transparent"
+                          speed="1"
+                          style="width: 172px; height: 172px"
+                          loop
+                          autoplay
+                        ></lottie-player>
+                      </div>
+                    </div>
+                    <div class="card-body cardBody">
+                      <h5 class="card-title sec-7-head">
+                        User-Centric AI Development
+                      </h5>
+                      <p
+                        class="card-text sec-7-content"
+                        style="padding-bottom: 16px"
+                      >
+                        Tailored for success, we create custom AI solutions
+                        designed uniquely to meet your target business
+                        challenges and goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card qr-card lottie-container">
+                    <div class="section-7-image">
+                      <div class="icon-image-wrap">
+                        <lottie-player
+                          id="lottie"
+                          src="assets/icons/sec-3.json"
+                          background="transparent"
+                          speed="1"
+                          style="width: 172px; height: 172px"
+                          loop
+                          autoplay
+                        ></lottie-player>
+                      </div>
+                    </div>
+                    <div class="card-body cardBody">
+                      <h5 class="card-title sec-7-head">
+                        Commitment to Excellence & Innovation
+                      </h5>
+                      <p class="card-text sec-7-content">
+                        Our AI expertise in areas such as Computer Vision, Edge
+                        AI, and Conversational AI follows innovative solutions
+                        that are delivered immaculately with real impact.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card qr-card lottie-container">
+                    <div class="section-7-image">
+                      <div class="icon-image-wrap">
+                        <lottie-player
+                          id="lottie"
+                          src="assets/icons/sec-4.json"
+                          background="transparent"
+                          speed="1"
+                          style="width: 120px; height: 172px"
+                          loop
+                          autoplay
+                        ></lottie-player>
+                      </div>
+                    </div>
+                    <div class="card-body cardBody">
+                      <h5 class="card-title sec-7-head">
+                        Ethical AI for Sustainability
+                      </h5>
+                      <p class="card-text sec-7-content">
+                        Our focus on ethical AI development ensures that all our
+                        solutions, including our successful AI products, are
+                        built with fairness, privacy, and security at their
+                        core, fostering trust through ethical practices.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card qr-card lottie-container">
+                    <div class="section-7-image">
+                      <div class="icon-image-wrap">
+                        <lottie-player
+                          id="lottie"
+                          src="assets/icons/sec-5.json"
+                          background="transparent"
+                          speed="1"
+                          style="width: 172px; height: 172px"
+                          loop
+                          autoplay
+                        ></lottie-player>
+                      </div>
+                    </div>
 
-      <!-- NINTH SECTION -->
-      <section class="section-7">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-              <div class="card qr-card lottie-container">
-                <div class="section-7-image">
-                  <div class="icon-image-wrap">
-                    <lottie-player
-                      src="assets/icons/sec-1.json"
-                      background="transparent"
-                      speed="1"
-                      style="width: 172px; height: 172px"
-                      loop
-                      autoplay
-                    ></lottie-player>
+                    <div class="card-body cardBody">
+                      <h5 class="card-title sec-7-head">
+                        Agile Development Approach
+                      </h5>
+                      <p class="card-text sec-7-content">
+                        Our agile methodology and close collaboration with
+                        clients ensure that user feedback is integral to the
+                        development process, allowing for continuous
+                        improvement.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body cardBody">
-                  <h5 class="card-title sec-7-head">
-                    Proven Expertise in Scalable AI Solutions
-                  </h5>
-                  <p class="card-text sec-7-content">
-                    With proven expertise in scalable AI solutions, our team has
-                    developed battle-tested AI SaaS products serving over 250
-                    users, showcasing our ability to design, develop, and scale
-                    complex AI technologies.
-                  </p>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card qr-card lottie-container">
+                    <div class="section-7-image">
+                      <div class="icon-image-wrap">
+                        <lottie-player
+                          id="lottie"
+                          src="assets/icons/sec-6.json"
+                          background="transparent"
+                          speed="1"
+                          style="width: 172px; height: 172px"
+                          loop
+                          autoplay
+                        ></lottie-player>
+                      </div>
+                    </div>
+                    <div class="card-body cardBody">
+                      <h5 class="card-title sec-7-head">
+                        Robust Support for Unparalleled Reliability
+                      </h5>
+                      <p class="card-text sec-7-content">
+                        Ensuring continuous excellence, our comprehensive
+                        support and optimization services are proven through the
+                        successful deployment and maintenance of our AI
+                        products.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card qr-card lottie-container">
-                <div class="section-7-image">
-                  <div class="icon-image-wrap">
-                    <lottie-player
-                      id="lottie"
-                      src="assets/icons/sec-2.json"
-                      background="transparent"
-                      speed="1"
-                      style="width: 172px; height: 172px"
-                      loop
-                      autoplay
-                    ></lottie-player>
-                  </div>
-                </div>
-                <div class="card-body cardBody">
-                  <h5 class="card-title sec-7-head">
-                    User-Centric AI Development
-                  </h5>
-                  <p
-                    class="card-text sec-7-content"
-                    style="padding-bottom: 16px"
-                  >
-                    Tailored for success, we create custom AI solutions designed
-                    uniquely to meet your target business challenges and goals.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card qr-card lottie-container">
-                <div class="section-7-image">
-                  <div class="icon-image-wrap">
-                    <lottie-player
-                      id="lottie"
-                      src="assets/icons/sec-3.json"
-                      background="transparent"
-                      speed="1"
-                      style="width: 172px; height: 172px"
-                      loop
-                      autoplay
-                    ></lottie-player>
-                  </div>
-                </div>
-                <div class="card-body cardBody">
-                  <h5 class="card-title sec-7-head">
-                    Commitment to Excellence & Innovation
-                  </h5>
-                  <p class="card-text sec-7-content">
-                    Our AI expertise in areas such as Computer Vision, Edge AI,
-                    and Conversational AI follows innovative solutions that are
-                    delivered immaculately with real impact.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card qr-card lottie-container">
-                <div class="section-7-image">
-                  <div class="icon-image-wrap">
-                    <lottie-player
-                      id="lottie"
-                      src="assets/icons/sec-4.json"
-                      background="transparent"
-                      speed="1"
-                      style="width: 120px; height: 172px"
-                      loop
-                      autoplay
-                    ></lottie-player>
-                  </div>
-                </div>
-                <div class="card-body cardBody">
-                  <h5 class="card-title sec-7-head">
-                    Ethical AI for Sustainability
-                  </h5>
-                  <p class="card-text sec-7-content">
-                    Our focus on ethical AI development ensures that all our
-                    solutions, including our successful AI products, are built
-                    with fairness, privacy, and security at their core,
-                    fostering trust through ethical practices.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card qr-card lottie-container">
-                <div class="section-7-image">
-                  <div class="icon-image-wrap">
-                    <lottie-player
-                      id="lottie"
-                      src="assets/icons/sec-5.json"
-                      background="transparent"
-                      speed="1"
-                      style="width: 172px; height: 172px"
-                      loop
-                      autoplay
-                    ></lottie-player>
-                  </div>
-                </div>
-
-                <div class="card-body cardBody">
-                  <h5 class="card-title sec-7-head">
-                    Agile Development Approach
-                  </h5>
-                  <p class="card-text sec-7-content">
-                    Our agile methodology and close collaboration with clients
-                    ensure that user feedback is integral to the development
-                    process, allowing for continuous improvement.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card qr-card lottie-container">
-                <div class="section-7-image">
-                  <div class="icon-image-wrap">
-                    <lottie-player
-                      id="lottie"
-                      src="assets/icons/sec-6.json"
-                      background="transparent"
-                      speed="1"
-                      style="width: 172px; height: 172px"
-                      loop
-                      autoplay
-                    ></lottie-player>
-                  </div>
-                </div>
-                <div class="card-body cardBody">
-                  <h5 class="card-title sec-7-head">
-                    Robust Support for Unparalleled Reliability
-                  </h5>
-                  <p class="card-text sec-7-content">
-                    Ensuring continuous excellence, our comprehensive support
-                    and optimization services are proven through the successful
-                    deployment and maintenance of our AI products.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
       </section>
 
@@ -1606,8 +1582,15 @@
           <div class="col-12 justify-content-center">
             <div class="clientele-title">
               <h1>Our Clientele</h1>
-              <!-- <p>Some words from our lovely customers.</p> -->
+              <p>Nibi is a NVIDIA certified expert</p>
             </div>
+          </div>
+          <div class="nvidia-logo-main">
+            <img
+              src="assets/images/nvidia-logo.svg"
+              alt="nvidia-logo"
+              class="img-fluid"
+            />
           </div>
         </div>
         <ul class="clientele-slider">
@@ -1977,228 +1960,235 @@
         </div> -->
       </section>
 
-      <!-- FAQ ELEVENTH SECTION -->
-      <section class="faqs-section">
-        <div class="faq-title">
-          <div class="container">
-            <!-- <div style="text-align: center">
+      <div class="mmm">
+        <!-- FAQ ELEVENTH SECTION -->
+        <section class="faqs-section">
+          <div class="faq-title">
+            <div class="container">
+              <!-- <div style="text-align: center">
               <button class="ai-btn">FAQ’s</button>
             </div> -->
-            <h1 class="sec-6-heading text-center">
-              Questions? We got answers.
+              <h1 class="sec-6-heading text-center">
+                Questions? We got answers.
+              </h1>
+              <p class="faq-head-para">
+                Some quetions we get a lot. We have answers.
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="bag-body">
+              <div class="accordion" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="bag-accordion-item">
+                  <h2 class="bag-accordion-header" id="headingOne">
+                    <button
+                      class="bag-accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      What is AI Resource Augmentation and How Can it Benefit My
+                      Company?
+                      <i class="fas fa-plus float-end bag-toggle-icon"></i
+                      ><i class="fas fa-times float-end d-none"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div class="card bag-card">
+                        <p class="card-body">
+                          AI resource augmentation involves integrating external
+                          AI professionals into your project to enhance your
+                          existing team's capabilities. This approach allows you
+                          to quickly scale AI projects, access specialized
+                          skills, and reduce the time and costs associated with
+                          hiring fulltime experts.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="bag-accordion-item">
+                  <h2 class="bag-accordion-header" id="headingTwo">
+                    <button
+                      class="bag-accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      How Do You Select AI Professionals for Resource
+                      Augmentation?
+
+                      <i class="fas fa-plus float-end bag-toggle-icon"></i
+                      ><i class="fas fa-times float-end d-none"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div class="card bag-card">
+                        <p class="card-body">
+                          We meticulously vet AI professionals based on their
+                          specialized skills, experience, and ability to
+                          integrate seamlessly with client teams. Our selection
+                          process includes rigorous technical assessments,
+                          comprehensive interviews, and compatibility
+                          evaluations to ensure we provide experts who align
+                          with your project requirements and company culture.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="bag-accordion-item">
+                  <h2 class="bag-accordion-header" id="heading3">
+                    <button
+                      class="bag-accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse3"
+                      aria-expanded="false"
+                      aria-controls="collapse3"
+                    >
+                      Can AI Resource Augmentation Help with Short-Term
+                      Projects?
+
+                      <i class="fas fa-plus float-end bag-toggle-icon"></i
+                      ><i class="fas fa-times float-end d-none"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading3"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div class="card bag-card">
+                        <p class="card-body">
+                          Yes, absolutely. AI resource augmentation is perfectly
+                          suited for short-term projects that require temporary
+                          specialized expertise. This approach offers businesses
+                          the flexibility to efficiently manage project costs
+                          while accessing advanced AI skills that may not be
+                          available inhouse.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- faq 4 -->
+                <div class="bag-accordion-item">
+                  <h2 class="bag-accordion-header" id="heading4">
+                    <button
+                      class="bag-accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse4"
+                      aria-expanded="false"
+                      aria-controls="collapse3"
+                    >
+                      How Does AI Resource Augmentation Handle Intellectual
+                      Property and Data Security?
+                      <i class="fas fa-plus float-end bag-toggle-icon"></i
+                      ><i class="fas fa-times float-end d-none"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading4"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div class="card bag-card">
+                        <p class="card-body">
+                          We ensure that all augmented personnel strictly adhere
+                          to confidentiality agreements and data protection
+                          policies. Intellectual property rights are explicitly
+                          defined in contracts to secure your business interests
+                          and protect sensitive information.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- faq 5 -->
+                <div class="bag-accordion-item">
+                  <h2 class="bag-accordion-header" id="heading5">
+                    <button
+                      class="bag-accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse5"
+                      aria-expanded="false"
+                      aria-controls="collapse5"
+                    >
+                      What Types of AI Skills Can Be Augmented Through Your
+                      Services?
+
+                      <i class="fas fa-plus float-end bag-toggle-icon"></i
+                      ><i class="fas fa-times float-end d-none"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading5"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div class="card bag-card">
+                        <p class="card-body">
+                          Our services offer a exhaustive range of AI skills for
+                          augmentation, including machine learning, deep
+                          learning, natural language processing, computer
+                          vision, and data science. These competencies can be
+                          applied across various industries and project types,
+                          from developing AI-driven products to enhancing data
+                          analytics capabilities.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="lead-more">
+                <a href="faq.html" target="_blank" class="ai-btn">Load More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- TWELETH SECTION -->
+        <section class="section-6">
+          <div class="container">
+            <h1 class="sec-6-heading" style="color: #fff">
+              Still Have Questions?
             </h1>
             <p class="faq-head-para">
-              Some quetions we get a lot. We have answers.
+              Can't find the answer you are llooking for <br />
+              Please chat with our friendly team
             </p>
           </div>
-        </div>
-        <div class="container">
-          <div class="bag-body">
-            <div class="accordion" id="faqAccordion">
-              <!-- FAQ 1 -->
-              <div class="bag-accordion-item">
-                <h2 class="bag-accordion-header" id="headingOne">
-                  <button
-                    class="bag-accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    What is AI Resource Augmentation and How Can it Benefit My
-                    Company?
-                    <i class="fas fa-plus float-end bag-toggle-icon"></i
-                    ><i class="fas fa-times float-end d-none"></i>
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    <div class="card bag-card">
-                      <p class="card-body">
-                        AI resource augmentation involves integrating external
-                        AI professionals into your project to enhance your
-                        existing team's capabilities. This approach allows you
-                        to quickly scale AI projects, access specialized skills,
-                        and reduce the time and costs associated with hiring
-                        fulltime experts.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- FAQ 2 -->
-              <div class="bag-accordion-item">
-                <h2 class="bag-accordion-header" id="headingTwo">
-                  <button
-                    class="bag-accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    How Do You Select AI Professionals for Resource
-                    Augmentation?
-
-                    <i class="fas fa-plus float-end bag-toggle-icon"></i
-                    ><i class="fas fa-times float-end d-none"></i>
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    <div class="card bag-card">
-                      <p class="card-body">
-                        We meticulously vet AI professionals based on their
-                        specialized skills, experience, and ability to integrate
-                        seamlessly with client teams. Our selection process
-                        includes rigorous technical assessments, comprehensive
-                        interviews, and compatibility evaluations to ensure we
-                        provide experts who align with your project requirements
-                        and company culture.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- FAQ 3 -->
-              <div class="bag-accordion-item">
-                <h2 class="bag-accordion-header" id="heading3">
-                  <button
-                    class="bag-accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse3"
-                    aria-expanded="false"
-                    aria-controls="collapse3"
-                  >
-                    Can AI Resource Augmentation Help with Short-Term Projects?
-
-                    <i class="fas fa-plus float-end bag-toggle-icon"></i
-                    ><i class="fas fa-times float-end d-none"></i>
-                  </button>
-                </h2>
-                <div
-                  id="collapse3"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading3"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    <div class="card bag-card">
-                      <p class="card-body">
-                        Yes, absolutely. AI resource augmentation is perfectly
-                        suited for short-term projects that require temporary
-                        specialized expertise. This approach offers businesses
-                        the flexibility to efficiently manage project costs
-                        while accessing advanced AI skills that may not be
-                        available inhouse.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- faq 4 -->
-              <div class="bag-accordion-item">
-                <h2 class="bag-accordion-header" id="heading4">
-                  <button
-                    class="bag-accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse4"
-                    aria-expanded="false"
-                    aria-controls="collapse3"
-                  >
-                    How Does AI Resource Augmentation Handle Intellectual
-                    Property and Data Security?
-                    <i class="fas fa-plus float-end bag-toggle-icon"></i
-                    ><i class="fas fa-times float-end d-none"></i>
-                  </button>
-                </h2>
-                <div
-                  id="collapse4"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading4"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    <div class="card bag-card">
-                      <p class="card-body">
-                        We ensure that all augmented personnel strictly adhere
-                        to confidentiality agreements and data protection
-                        policies. Intellectual property rights are explicitly
-                        defined in contracts to secure your business interests
-                        and protect sensitive information.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- faq 5 -->
-              <div class="bag-accordion-item">
-                <h2 class="bag-accordion-header" id="heading5">
-                  <button
-                    class="bag-accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse5"
-                    aria-expanded="false"
-                    aria-controls="collapse5"
-                  >
-                    What Types of AI Skills Can Be Augmented Through Your
-                    Services?
-
-                    <i class="fas fa-plus float-end bag-toggle-icon"></i
-                    ><i class="fas fa-times float-end d-none"></i>
-                  </button>
-                </h2>
-                <div
-                  id="collapse5"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading5"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    <div class="card bag-card">
-                      <p class="card-body">
-                        Our services offer a exhaustive range of AI skills for
-                        augmentation, including machine learning, deep learning,
-                        natural language processing, computer vision, and data
-                        science. These competencies can be applied across
-                        various industries and project types, from developing
-                        AI-driven products to enhancing data analytics
-                        capabilities.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--  -->
-            </div>
-            <div class="lead-more">
-              <a href="faq.html" target="_blank" class="ai-btn">Load More</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- TWELETH SECTION -->
-      <section class="section-6 mmm">
-        <h1 class="sec-6-heading" style="color: #fff">Still Have Questions?</h1>
-        <p class="faq-head-para">
-          Can't find the answer you are llooking for <br />
-          Please chat with our friendly team
-        </p>
-      </section>
+        </section>
+      </div>
       <!-- footer section  -->
       <section class="footer-main">
         <div class="container">
