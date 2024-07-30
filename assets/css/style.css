@@ -799,10 +799,12 @@ p {
 
 .featuresection {
   padding-bottom: 14%;
+  text-align: center;
 }
 
 .featurebtn {
-  border-radius: 64px;
+  display: inline-block;
+  text-decoration: none;
   border-radius: 64px;
   background: linear-gradient(
     335deg,
@@ -821,7 +823,6 @@ p {
   font-variation-settings: "slnt" 0;
   text-align: center;
   margin: 5px auto;
-  display: block;
   position: relative;
   z-index: 9;
 }
@@ -1379,6 +1380,7 @@ p {
   height: 100%;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 .case-study-section .case-study-title {
   padding-bottom: 60px;
